@@ -1,6 +1,7 @@
 (english_homage_label)=
-# Homage
+# ߤߏߡߊߜߋ
 
+ߞߎߞߎߝߎߗߞߌߣߜߞߊ߲
 In the name of Allah, most merciful and most gracious, I
 
 embark upon this qu’est of self réflection and observation. But,
