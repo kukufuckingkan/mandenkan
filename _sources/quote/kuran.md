@@ -1,0 +1,1 @@
+O you who have believed, fulfill [all] contracts.[1] Lawful for you are the animals of grazing livestock except for that which is recited to you [in this Qur’ān] - hunting not being permitted while you are in the state of iḥrām.[2] Indeed, Allāh ordains what He intends.
