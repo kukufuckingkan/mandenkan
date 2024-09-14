@@ -1,0 +1,5 @@
+
+(english_adjective.particle)=
+# verb
+
+this is the page for particle

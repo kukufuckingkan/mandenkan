@@ -1,0 +1,5 @@
+
+(english_noun.common_noun)=
+# common noun
+
+this is the page for common noun

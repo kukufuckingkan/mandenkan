@@ -1,0 +1,5 @@
+
+(english_noun.proper_noun)=
+# proper noun
+
+this is the page for proper noun
