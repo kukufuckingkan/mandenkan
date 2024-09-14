@@ -28,11 +28,9 @@ Here is my nifty citation {cite}`holdgraf_evidence_2014`.`address`.
 [](holdgraf_rapid_2016)
 
 
-Here is []`kuran_verse_1`
 
-Here is {doc}`kuran.md`
 
-refgr is [](kuran.md)
+as stated in the holity kuran: [](kuran.md)
 
 
 This is a reference to :ref:`my very own label <kuran_verse_1>`.
