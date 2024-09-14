@@ -13,5 +13,28 @@ It does not go in-depth into any particular topic - check out [the Jupyter Book 
 
 Check out the content pages bundled with this sample book to see more.
 
+Please refer to [homage page](english_homage_label).
+
+
+Here is my nifty citation {cite}`holdgraf_evidence_2014`.`address`.
+
 ```{tableofcontents}
 ```
+
+```{bibliography}
+```
+
+{ref}`holdgraf_rapid_2016`
+[](holdgraf_rapid_2016)
+
+
+Here is []`kuran_verse_1`
+
+Here is {doc}`kuran.md`
+
+refgr is [](kuran.md)
+
+
+This is a reference to :ref:`my very own label <kuran_verse_1>`.
+
+This is a reference to :ref:`kuran_verse_1`.
