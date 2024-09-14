@@ -5,7 +5,7 @@
 
 introduction in nko
 
-(section-label)=
+<!-- (section-label)=
 ## Introduction in english
 
-Here is a [reference to the intro](intro.md). Here is a reference to [](section-label).
+Here is a [reference to the intro](intro.md). Here is a reference to [](section-label). -->
