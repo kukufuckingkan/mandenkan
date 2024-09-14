@@ -1,7 +1,5 @@
-(nko_homage_label)=
-# ߤߏߡߊߜߋ
+(english_introduction_label)=
+# Introduction
 
-ߊߛߡߊ ߛߊ ߊߛߘߖ ߛߊ ߘ ߊߛ ߘ ߊߛߘ ߊߛߘߣߞߛߊߖߟߘߣߛߊ ߖ ߘߛߝߛߖߊߞߓߟߞߛߊߖߘߛߊߞߖ 
-ߘߛߝߟߛߖߝ ߛߖ ߝ ߘߛߟ ߝߘ 
-ߛߘߊߟߛߊߖ ߝߛ ߝ ߛߝ ߘߘߛߝߣߟߣߖߝߘߛߣߟߝߣߟߛߝߣߛߣߝ
-ߘߛ
+this is the introduction page in english
+
