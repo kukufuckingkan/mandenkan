@@ -1,14 +1,3 @@
-# Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
-
-# format: jb-book
-# root: homage
-# chapters:
-# - file: intro
-# - file: markdown
-# - file: notebooks
-# - file: markdown-notebooks
-
 format: jb-book
 root: index
 parts:
@@ -17,8 +6,6 @@ parts:
     chapters:
     - file: ߒߞߏ/1_homage.md
     - file: ߒߞߏ/2_introduction.md
-      sections:
-      - file: path/to/part1/chapter2/section1
   - caption: English
     chapters:
     - file: english/1_homage.md
@@ -26,6 +13,12 @@ parts:
     - file: english/3_alphabet/1_index.md
       sections:
       - file: english/3_alphabet/2_tone.md
+        sections:
+        - file: english/3_alphabet/2_tone/1_tone_mathematics.ipynb
+        - file: english/3_alphabet/2_tone/2_tone_physics.ipynb
+        - file: english/3_alphabet/2_tone/3_tone_chemistry.ipynb
+        - file: english/3_alphabet/2_tone/4_tone_chemistry_computer_science.ipynb
+        - file: english/3_alphabet/2_tone/5_tone_summary.ipynb
       - file: english/3_alphabet/3_letter.md
       - file: english/3_alphabet/4_vowel.md
       - file: english/3_alphabet/5_consonant.md
@@ -33,10 +26,10 @@ parts:
       - file: english/3_alphabet/7_ߒ_character.md
       - file: english/3_alphabet/8_ߠ_character.md
 
-
-
-
-
+        
+        
+        
+        
 # format: jb-book
 # root: index
 # parts:
@@ -45,27 +38,26 @@ parts:
 #     chapters:
 #     - file: ߒߞߏ/1_homage.md
 #     - file: ߒߞߏ/2_introduction.md
-#   #     sections:
-#   #     - file: path/to/part1/chapter2/section1
-#    - caption: English
+#   - caption: English
 #     chapters:
 #     - file: english/1_homage.md
 #     - file: english/2_ntroduction.md
+#     - file: english/3_alphabet/1_index.md
 #       sections:
-#       - file: path/to/part2/chapter2/section1
-
-# format: jb-book
-# root: ߀
-# parts:
-#   - caption: Name of Part 1
-#     chapters:
-#     - file: path/to/part1/chapter1
-#     - file: path/to/part1/chapter2
-#       sections:
-#       - file: path/to/part1/chapter2/section1
-#   - caption: Name of Part 2
-#     chapters:
-#     - file: path/to/part2/chapter1
-#     - file: path/to/part2/chapter2
-#       sections:
-#       - file: path/to/part2/chapter2/section1
+#       - file: english/3_alphabet/2_tone.md
+#         sections:
+#         - file: english/3_alphabet/2_tone/1_tone_mathematics.ipynb
+#         - file: english/3_alphabet/2_tone/2_tone_physics.ipynb
+#         - file: english/3_alphabet/2_tone/3_tone_chemistry.ipynb
+#         - file: english/3_alphabet/2_tone/4_tone_chemistry_computer_science.ipynb
+#         - file: english/3_alphabet/2_tone/5_tone_summary.ipynb
+#       - file: english/3_alphabet/3_letter.md
+#       - file: english/3_alphabet/4_vowel.md
+#       - file: english/3_alphabet/5_consonant.md
+#       - file: english/3_alphabet/6_number.md
+#       - file: english/3_alphabet/7_ߒ_character.md
+#       - file: english/3_alphabet/8_ߠ_character.md
+#         sections:
+#         - file: english/3_alphabet/2_tone/1_tone_mathematics.ipynb
+#       - file: english/3_alphabet/2_tone/2_tone_physics.ipynb
+        
