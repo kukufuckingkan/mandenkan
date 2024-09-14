@@ -65,10 +65,13 @@ parts:
       - file: english/4_grammar/2_noun.md
       - file: english/4_grammar/3_pronoun.md
       - file: english/4_grammar/4_adjective.md
+        sections:
+        - file: english/4_grammar/4_1_adjective/1_index.md
+        - file: english/4_grammar/4_1_adjective/2_attachable.md
+        - file: english/4_grammar/4_1_adjective/3_unattachable.md
+        - file: english/4_grammar/4_1_adjective/4_intermediate.md
       - file: english/4_grammar/5_predicate.md
       - file: english/4_grammar/6_verb.md
       - file: english/4_grammar/7_particle.md
       - file: english/4_grammar/8_interrogation.md
       - file: english/4_grammar/9_adverb.md
-    
- 
