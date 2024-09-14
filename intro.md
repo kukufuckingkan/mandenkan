@@ -24,15 +24,9 @@ Here is my nifty citation {cite}`holdgraf_evidence_2014`.`address`.
 ```{bibliography}
 ```
 
-{ref}`holdgraf_rapid_2016`
-[](holdgraf_rapid_2016)
 
 
 
+ as stated in the holy kuran {ref}`english_homage_label2`
 
-as stated in the holity kuran: [](kuran.md)
 
-
-This is a reference to :ref:`my very own label <kuran_verse_1>`.
-
-This is a reference to :ref:`kuran_verse_1`.
