@@ -1,5 +1,5 @@
-(nko_homage_label)=
-# ߤߏߡߊߜߋ
+(nko_introduction_label)=
+# ߌߣߕߙߏߘߎߗߕߌߏߣ
 ߌߣߕߙߏߘߎߗߕߌߏߣ
 
 
