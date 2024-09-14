@@ -1,8 +1,5 @@
-(nko_homage_label)=
-# ߤߏߡߊߜߋ
+(english_homage_label)=
+# Homage
 
-ߊߛߡߊ ߛߊ ߊߛߘߖ ߛߊ ߘ ߊߛ ߘ ߊߛߘ ߊߛߘߣߞߛߊߖߟߘߣߛߊ ߖ ߘߛߝߛߖߊߞߓߟߞߛߊߖߘߛߊߞߖ 
-ߘߛߝߟߛߖߝ ߛߖ ߝ ߘߛߟ ߝߘ 
-ߛߘߊߟߛߊߖ ߝߛ ߝ ߛߝ ߘߘߛߝߣߟߣߖߝߘߛߣߟߝߣߟߛߝߣߛߣߝ
-ߘߛߝ ߖߘߟߛߖ ߝߘߛߊ
+this is the homage page in english
 
