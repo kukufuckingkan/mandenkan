@@ -7,7 +7,7 @@ The language spoken by men is Mandekan, voice of the children of man and its spe
 
 
 The table below show the correspondence in mandenkan, voice of the child of man.
-
+sdsd
 
 It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
 
