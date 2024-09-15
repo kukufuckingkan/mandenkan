@@ -9,3 +9,28 @@ The language spoken by men is Mandekan, voice of the children of man and its spe
 
 The table below show the correspondence in mandenkan, voice of the child of man.
 
+
+```{table} Leafs of Man
+:name: my-table-ref
+
+| ߒߞߏ | Transliteration | Translation|
+|---|---|--|
+| ߡߊ߲ | Man| Man|
+| ߡߊ߲ߣߎ | | Men|
+| ߘߋ߲ |den | Child|
+| ߞߊ|  | rererere|
+| ߡߊ߲ | ߞߊ߲ | Voice|
+| ߞߊ߲ߣߎ |  | Voices|
+| ߡߊ߲ߘߋ߲ |  | Child of Man|
+| ߡߊ߲ߣߎߘߋ߲ |  | Child of Men|
+| ߡߊ߲ߘߋ߲ߣߎ |  | Children of Man|
+| ߡߊ߲ߣߎߘߋ߲ߣߎ |  | Children of Men|
+| ߡߊ߲ߘߋ߲ߣߎߟߎ |  | The Children of Men|
+| ߡߊ߲ | ߡߊ߲ߘߋ߲ߣߎߟߎߞߊ | rererere|
+| ߡߊ߲ | ߡߊ߲ߘߋ߲ߣߎߟߎߞߊ߲ | rererere|
+| ߡߊ߲ | ߡߊ߲ߘߋ߲ߣߎߟߎߞߊ߲ | rererere|
+| ߡߊ߲ | ߡߊ߲ߘߋ߲ߣߎߞߊߟߎ | rererere|
+| ߡߊ߲ߘߌ߲ߜߏ | Mandingdo | |
+| ߝߊ | Father | |
+| ߒߝߊ ߡߏ | Father | |
+```
