@@ -12,6 +12,9 @@ parts:
       title: Homage
     - file: english/2_ntroduction.md
       title: Introduction
+      sections:
+      - file: english/2_1_introduction/1_definition.md
+      - file: english/2_1_introduction/2_mathematics.ipynb
     - file: english/3_alphabet/1_index.md
       title: Alphabet
       sections:
@@ -26,7 +29,9 @@ parts:
           title: Chemical Explanation
         - file: english/3_alphabet/2_tone/4_tone_chemistry_computer_science.ipynb
           title: Computer Science Explanation
-        - file: english/3_alphabet/2_tone/5_tone_summary.ipynb
+        - file: english/3_alphabet/2_tone/5_probability.ipynb
+          title: Statistics
+        - file: english/3_alphabet/2_tone/6_tone_summary.ipynb
           title: Summary
       - file: english/3_alphabet/3_letter.md
       - file: english/3_alphabet/4_vowel.md
@@ -48,4 +53,5 @@ parts:
       - file: english/4_grammar/6_verb.md
       - file: english/4_grammar/7_particle.md
       - file: english/4_grammar/8_interrogation.md
-      - file: english/4_grammar/9_adverb.md
+      - file: english/4_grammar/9_adverb.md  
+      

@@ -187,13 +187,18 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">English</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="english/1_homage.html">Homage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="english/2_ntroduction.html">Introduction</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="english/2_ntroduction.html">Introduction</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="english/2_1_introduction/1_definition.html">Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="english/2_1_introduction/2_mathematics.html">Mathematics note</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="english/3_alphabet/1_index.html">Alphabet</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="english/3_alphabet/2_tone.html">Tone</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="english/3_alphabet/2_tone/1_tone_mathematics.html">Mathematical Explanation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="english/3_alphabet/2_tone/2_tone_physics.html">Physics Explanation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="english/3_alphabet/2_tone/3_tone_chemistry.html">Chemical Explanation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="english/3_alphabet/2_tone/5_tone_summary.html">Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="english/3_alphabet/2_tone/5_probability.html">Probability &amp; Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="english/3_alphabet/2_tone/6_tone_summary.html">Summary</a></li>
 </ul>
 </details></li>
 <li class="toctree-l2"><a class="reference internal" href="english/3_alphabet/3_letter.html">letter</a></li>
@@ -474,6 +479,7 @@ document.write(`
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># if table of content does become updated</span>
 <span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="o">--</span><span class="nb">all</span> <span class="n">mybookname</span><span class="o">/</span>
+<span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="o">--</span><span class="nb">all</span> <span class="o">.</span>
 </pre></div>
 </div>
 </div>
@@ -513,7 +519,7 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># rebuild html after change</span>
-<span class="n">jb</span> <span class="n">build</span>
+<span class="n">jb</span> <span class="n">build</span> <span class="o">.</span>
 </pre></div>
 </div>
 </div>
@@ -527,35 +533,17 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;!</span>--<span class="w"> </span>
- <span class="k">as</span> <span class="n">stated</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">holy</span> <span class="n">kuran</span> <span class="p">{</span><span class="n">ref</span><span class="p">}</span><span class="err">`</span><span class="n">english_homage_label2</span><span class="err">`</span>
-<span class="p">[](</span><span class="n">english_homage_label2</span><span class="p">)</span> <span class="o">--&gt;</span>
-
-
-<span class="o">&lt;!</span>--<span class="w"> </span>
-<span class="k">as</span> <span class="n">stated</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">holity</span> <span class="n">kuran</span><span class="p">:</span> <span class="p">[](</span><span class="n">kuran</span><span class="o">.</span><span class="n">md</span><span class="p">)</span> <span class="p">[](</span><span class="n">english_homage_label2</span><span class="p">)</span>
- <span class="o">--&gt;</span>
-
-<span class="o">&lt;!</span>--<span class="w"> </span>This<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>reference<span class="w"> </span>to<span class="w"> </span>:ref:<span class="sb">`</span>my<span class="w"> </span>very<span class="w"> </span>own<span class="w"> </span>label<span class="w"> </span>&lt;kuran_verse_1&gt;<span class="sb">`</span>.
-
-<span class="n">This</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">reference</span> <span class="n">to</span> <span class="p">:</span><span class="n">ref</span><span class="p">:</span><span class="err">`</span><span class="n">kuran_verse_1</span><span class="err">`</span><span class="o">.</span> <span class="o">--&gt;</span>
-<span class="o">&lt;!</span>--<span class="w"> </span><span class="o">{</span>ref<span class="o">}</span><span class="sb">`</span>holdgraf_rapid_2016<span class="sb">`</span>
-<span class="p">[](</span><span class="n">holdgraf_rapid_2016</span><span class="p">)</span> <span class="p">[](</span><span class="n">english_homage_label2</span><span class="p">)</span>
- <span class="o">--&gt;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># configure sphinx</span>
+<span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">config</span> <span class="n">sphinx</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">book</span>
+<span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">config</span> <span class="n">sphinx</span> <span class="o">.</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># front page</span>
-
-<span class="p">(</span><span class="n">nko_book_title_label</span><span class="p">)</span><span class="o">=</span>
-<span class="c1"># ߡߊ߲ߘߋ߲ߞߊ߲</span>
-
-<span class="p">(</span><span class="n">english_book_title_label</span><span class="p">)</span><span class="o">=</span>
-<span class="c1"># Mandenkan</span>
-<span class="o">//</span> <span class="n">add</span> <span class="n">logo</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="o">-</span><span class="n">build</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">book</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">book</span><span class="o">/</span><span class="n">_build</span><span class="o">/</span><span class="n">html</span> <span class="o">-</span><span class="n">b</span> <span class="n">html</span>
+<span class="n">sphinx</span><span class="o">-</span><span class="n">build</span> <span class="o">.</span> <span class="o">./</span><span class="n">_build</span><span class="o">/</span><span class="n">html</span> <span class="o">-</span><span class="n">b</span> <span class="n">html</span>
 </pre></div>
 </div>
 </div>

@@ -57,6 +57,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'english/3_alphabet/2_tone';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -187,13 +189,18 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">English</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../1_homage.html">Homage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_ntroduction.html">Introduction</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../2_ntroduction.html">Introduction</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../2_1_introduction/1_definition.html">Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../2_1_introduction/2_mathematics.html">Mathematics note</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="1_index.html">Alphabet</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Tone</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="2_tone/1_tone_mathematics.html">Mathematical Explanation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="2_tone/2_tone_physics.html">Physics Explanation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="2_tone/3_tone_chemistry.html">Chemical Explanation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_tone/5_tone_summary.html">Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2_tone/5_probability.html">Probability &amp; Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2_tone/6_tone_summary.html">Summary</a></li>
 </ul>
 </details></li>
 <li class="toctree-l2"><a class="reference internal" href="3_letter.html">letter</a></li>
@@ -393,7 +400,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -409,6 +418,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>Tone</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intonation"><strong>Intonation</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-differences">Key Differences:</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -420,11 +439,50 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="tone">
 <span id="english-alphabet-tone"></span><h1>tone<a class="headerlink" href="#tone" title="Link to this heading">#</a></h1>
+<p>Intonation is the rise and fall of the voice in speaking. It is the accuracy of pitch in playing or singging, or on stringed instrument such as a tamtam.</p>
 <p>We distinguish two categories of tones: elevated and elongated.  Elevation of tone is either low or high ;its elongation is either descending or ascending.</p>
 <p>As for types of elevated tones: their combination corresponds to a wave. the same applies to elongation.</p>
 <p>The decibel of the tones corresponds to its magnitude on a wave.</p>
 <p>its vertical magnitude corresponds to its height and the horizontal corresponds to its width. that is to say that elongation corresponds to width of the wave and elevation to the its heigh. therefore any other tone is a combination of the proportions of the wave height and witdth. please see mathematical explanation for further details.</p>
 <p>Mandenkan distinguishes four tones: high and low, ascending and descenting. From these four are all others tones produced</p>
+<p><strong>Tone</strong> and <strong>intonation</strong> are both aspects of how we use pitch in speech, but they serve different purposes and are used in different linguistic contexts. Here’s a breakdown of each:</p>
+<section id="id1">
+<h2><strong>Tone</strong><a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Definition</strong>: Tone refers to the use of pitch to distinguish word meaning.</p></li>
+<li><p><strong>Usage</strong>: In <strong>tonal languages</strong> (e.g., Mandarin, Thai, Yoruba), tone is an essential part of a word’s identity. The same sequence of sounds can have different meanings depending on the pitch or pitch pattern used.</p></li>
+<li><p><strong>Example</strong>: In Mandarin, the syllable “ma” can mean different things depending on the tone used:</p>
+<ul>
+<li><p><strong>mā</strong> (high level tone) = “mother”</p></li>
+<li><p><strong>má</strong> (rising tone) = “hemp”</p></li>
+<li><p><strong>mǎ</strong> (falling-rising tone) = “horse”</p></li>
+<li><p><strong>mà</strong> (falling tone) = “scold”</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="intonation">
+<h2><strong>Intonation</strong><a class="headerlink" href="#intonation" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Definition</strong>: Intonation refers to the variation of pitch across a sentence or phrase, used to convey meaning or emotion, or to signal the type of sentence (e.g., question, statement, command).</p></li>
+<li><p><strong>Usage</strong>: Intonation occurs in <strong>non-tonal languages</strong> (e.g., English) and can change the nuance or intention behind a sentence, but it doesn’t change the literal meaning of individual words.</p></li>
+<li><p><strong>Example</strong>: In English, you can say the same words with different intonations:</p>
+<ul>
+<li><p>“You’re coming.” (statement, falling intonation)</p></li>
+<li><p>“You’re coming?” (question, rising intonation)</p></li>
+<li><p>“You’re <em>coming</em>!” (emphasis, expressive intonation)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="key-differences">
+<h2>Key Differences:<a class="headerlink" href="#key-differences" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Tone</strong> affects individual words and their meanings.</p></li>
+<li><p><strong>Intonation</strong> affects the overall meaning or mood of a sentence, without changing the dictionary meaning of the words.</p></li>
+</ul>
+<p>Tonal languages have both <strong>tone</strong> and <strong>intonation</strong>, while non-tonal languages like English rely primarily on <strong>intonation</strong>.</p>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -483,6 +541,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>Tone</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intonation"><strong>Intonation</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-differences">Key Differences:</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

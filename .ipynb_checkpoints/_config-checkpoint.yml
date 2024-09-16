@@ -32,7 +32,11 @@ html:
   use_issues_button: true
   use_repository_button: true
 
-# In _config.yml
+# sphinx config
+    
 sphinx:
+  extra_extensions:
+    - sphinx_proof
   config:
     bibtex_reference_style: author_year
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
