@@ -12,6 +12,8 @@ parts:
       title: Homage
     - file: english/2_ntroduction.md
       title: Introduction
+    - file: english/3_communication.ipynb
+      title: communication
       sections:
       - file: english/2_1_introduction/1_definition.md
       - file: english/2_1_introduction/2_mathematics.ipynb
@@ -50,6 +52,7 @@ parts:
       - file: english/3_alphabet/6_number.md
       - file: english/3_alphabet/7_ߒ_character.md
       - file: english/3_alphabet/8_ߠ_character.md
+      - file: english/3_alphabet/9_punctuation.md
     - file: english/4_grammar/1_index.md
       sections:
       - file: english/4_grammar/2_noun.md
@@ -65,4 +68,7 @@ parts:
       - file: english/4_grammar/7_particle.md
       - file: english/4_grammar/8_interrogation.md
       - file: english/4_grammar/9_adverb.md  
+      - file: audio.ipynb 
+    
+      
       

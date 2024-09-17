@@ -18,3 +18,8 @@ keras
 tensorflow
 sympy
 pygeos
+geometer
+prettytable
+plottable
+great_tables
+python-dotenv
