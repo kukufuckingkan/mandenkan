@@ -6,7 +6,6 @@ from IPython.core.display import HTML
 
 def player(filePath:str,env:str) -> None:
     path = getPath(filePath,env)
-    print(path)
     """ will display html 5 player for compatible browser
 
     Parameters :
