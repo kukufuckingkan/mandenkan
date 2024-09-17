@@ -10,6 +10,7 @@ logo: logo.png
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: force
+  kernel: "my_kernel"
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -40,6 +41,7 @@ sphinx:
   config:
     bibtex_reference_style: author_year
     html_extra_path: ["resource"]
+    html_favicon: favicon.ico
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     
 parse:
@@ -47,4 +49,12 @@ parse:
     # don't forget to list any other extensions you want enabled,
     # including those that are enabled by default!
     - amsmath    
+
+html:
+    favicon : "favicon.ico"
+    
+# execute:
+#   execute_notebooks: true  # This ensures that the notebooks are executed during the build process
+#   kernel: "my_kernel"  # Use the default kernel across all notebooks
+#   cache: false  # You can set this to true if you want to cache executed notebooks
     

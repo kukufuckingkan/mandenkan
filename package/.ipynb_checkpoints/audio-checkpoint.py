@@ -1,10 +1,12 @@
+from __future__ import division
 import scipy.constants as const
 import scipy
 from scipy.io import wavfile
 from IPython.core.display import HTML
-from __future__ import division
 
-def wavPlayer(filepath):
+def player(filePath:str,env:str) -> None:
+    path = getPath(filePath,env)
+    print(path)
     """ will display html 5 player for compatible browser
 
     Parameters :
@@ -29,7 +31,17 @@ def wavPlayer(filepath):
       Your browser does not support the audio element.
     </audio>
     </body>
-    """%(filepath)
+    """%(path)
     display(HTML(src))
 
-def ___main__():
+
+def getPath(path:str,env: str) -> str:
+    PATH_RESOURCE = '/resource'
+    
+    if PATH_RESOURCE in path and 'DEV' == env:
+        return path.replace(PATH_RESOURCE,'')
+    return path
+
+    
+    
+    
