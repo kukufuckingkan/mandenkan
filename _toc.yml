@@ -12,6 +12,8 @@ parts:
       title: Homage
     - file: english/2_ntroduction.md
       title: Introduction
+    - file: english/3_communication.ipynb
+      title: communication
       sections:
       - file: english/2_1_introduction/1_definition.md
       - file: english/2_1_introduction/2_mathematics.ipynb
@@ -21,16 +23,27 @@ parts:
       - file: english/3_alphabet/2_tone.md
         title: Tone
         sections:
-        - file: english/3_alphabet/2_tone/1_tone_mathematics.ipynb
-          title: Mathematical Explanation
-        - file: english/3_alphabet/2_tone/2_tone_physics.ipynb
-          title: Physics Explanation
+        - file: english/3_alphabet/2_tone/1_formula.md
+          title: Formula
+        - file: english/3_alphabet/2_tone/2_tone_mathematics.ipynb
+          title: Mathematics
+          sections:
+          - file: english/3_alphabet/2_tone/2_mathematics/1_probability.ipynb
+            title: Probability
+          - file: english/3_alphabet/2_tone/2_mathematics/2_statistics.ipynb
+            title: Statistics
+          - file: english/3_alphabet/2_tone/2_mathematics/3_geometry.ipynb
+            title: Geometry
+          - file: mandenkan/english/3_alphabet/2_tone/2_mathematics/Number.ipynb
+            title: Number
         - file: english/3_alphabet/2_tone/3_tone_chemistry.ipynb
-          title: Chemical Explanation
-        - file: english/3_alphabet/2_tone/4_tone_chemistry_computer_science.ipynb
-          title: Computer Science Explanation
-        - file: english/3_alphabet/2_tone/5_probability.ipynb
-          title: Probability & Statistics
+          title: Chemistry
+        - file: english/3_alphabet/2_tone/4_tone_computer_science.ipynb
+          title: Computer Science
+        - file: english/3_alphabet/2_tone/5_tone_physics.ipynb
+          title: Physics
+        - file: english/3_alphabet/2_tone/6_tone_biology.ipynb
+          title: Biology
         - file: english/3_alphabet/2_tone/6_tone_summary.ipynb
           title: Summary
       - file: english/3_alphabet/3_letter.md

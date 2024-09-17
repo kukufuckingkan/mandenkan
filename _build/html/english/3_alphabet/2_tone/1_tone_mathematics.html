@@ -34,6 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/proof.css?v=b4b7a797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -57,8 +58,6 @@
     <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'english/3_alphabet/2_tone/1_tone_mathematics';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -199,6 +198,8 @@
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Mathematical Explanation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="2_tone_physics.html">Physics Explanation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="3_tone_chemistry.html">Chemical Explanation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="5_probability.html">Probablity &amp; Statistics</a></li>
+
 <li class="toctree-l3"><a class="reference internal" href="6_tone_summary.html">Summary</a></li>
 </ul>
 </details></li>
@@ -438,7 +439,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="alphabet-s-tone-in-mathematics">
+  <section id="alphabet-s-tone-in-mathematics">
 <h1>alphabet’s tone in mathematics<a class="headerlink" href="#alphabet-s-tone-in-mathematics" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -461,7 +462,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/b1a842fe356e3d136ccfd81dc027999860fe42d11304c05600dff7c6efae5d2e.svg" src="../../../_images/b1a842fe356e3d136ccfd81dc027999860fe42d11304c05600dff7c6efae5d2e.svg" />
+<img alt="../../../_images/96749c0e7966f15c1e8276633797a1628faf014ed25ff13a2042117ff937965f.svg" src="../../../_images/96749c0e7966f15c1e8276633797a1628faf014ed25ff13a2042117ff937965f.svg" />
 </div>
 </div>
 <section id="elavated-tone">
@@ -477,7 +478,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/772bb36ba89d51d48e51ba9b4322c0d61e2d7b939e508bf49e82475be8291b6a.svg" src="../../../_images/772bb36ba89d51d48e51ba9b4322c0d61e2d7b939e508bf49e82475be8291b6a.svg" />
+<img alt="../../../_images/3fb22b8f77a83a2cdaaca977ce459fdfc4588b8608bbaa9baf0c2bde344f9488.svg" src="../../../_images/3fb22b8f77a83a2cdaaca977ce459fdfc4588b8608bbaa9baf0c2bde344f9488.svg" />
 </div>
 </div>
 </section>
@@ -494,7 +495,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/4b71824a2ddf0782479f8347315951349d58ad6508ee5f6cabeac13406935964.svg" src="../../../_images/4b71824a2ddf0782479f8347315951349d58ad6508ee5f6cabeac13406935964.svg" />
+<img alt="../../../_images/7f1b9676e770381d94cbe8a372d0df2cbb02ce2fd62206d8a09638a211275572.svg" src="../../../_images/7f1b9676e770381d94cbe8a372d0df2cbb02ce2fd62206d8a09638a211275572.svg" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -522,31 +523,25 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/639eb189338ffc6e2739887d576e0d03abfd7d4b65114eb6e45fd01af208c1d6.svg" src="../../../_images/639eb189338ffc6e2739887d576e0d03abfd7d4b65114eb6e45fd01af208c1d6.svg" />
+<img alt="../../../_images/64d5093f574ad91f519dc9adcce673b89471e8f74e75b94a28f20e264473aa6b.svg" src="../../../_images/64d5093f574ad91f519dc9adcce673b89471e8f74e75b94a28f20e264473aa6b.svg" />
 </div>
 </div>
 <p>intonation is the fall and rise of the voice in speaking.</p>
-<p>let $<span class="math notranslate nohighlight">\( x \in R \)</span><span class="math notranslate nohighlight">\(, the real numbers and \)</span><span class="math notranslate nohighlight">\( x={x_{1},x_{2},x_{3},..,x_{n}} \)</span>$</p>
-<div class="math notranslate nohighlight">
-\[
-\int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
-\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Math</span><span class="p">,</span> <span class="n">Latex</span>
-<span class="n">display</span><span class="p">(</span><span class="n">Math</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;F(k) = \int_{-\infty}^{\infty} f(x) e^{2\pi i k} dx&#39;</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="err">$</span> <span class="n">y</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="n">x</span> <span class="err">$</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\displaystyle F(k) = \int_{-\infty}^{\infty} f(x) e^{2\pi i k} dx\]</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+    <span class="err">$</span> <span class="n">y</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="n">x</span> <span class="err">$</span>
+    <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
 </div>
 </div>
-<p>let $<span class="math notranslate nohighlight">\( x \in R \)</span>$, the real numbers.</p>
-<p>\begin{equation}
-\text {let}\  x \in R, \text {the real numbers}.
-\end{equation}</p>
+</div>
 </section>
 </section>
 </section>

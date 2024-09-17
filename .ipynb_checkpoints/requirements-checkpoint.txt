@@ -1,5 +1,7 @@
 sphinx
 sphinx-proof
+sphinx-inline-tabs
+pydata-sphinx-theme
 jupyter-book
 matplotlib
 numpy
@@ -14,3 +16,5 @@ pandas
 skitlearn
 keras
 tensorflow
+sympy
+pygeos

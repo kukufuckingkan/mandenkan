@@ -16,3 +16,6 @@ pandas
 skitlearn
 keras
 tensorflow
+sympy
+pygeos
+geometer
