@@ -59,6 +59,7 @@
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'audio';</script>
+    <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="adverb" href="english/4_grammar/9_adverb.html" />
@@ -284,53 +285,6 @@
 
 
 
-<div class="dropdown dropdown-source-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
-    <i class="fab fa-github"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
-   class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="btn__text-container">Repository</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Faudio.html&body=Your%20issue%20content%20here." target="_blank"
-   class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="btn__text-container">Open issue</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-
-
 <div class="dropdown dropdown-download-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
     <i class="fas fa-download"></i>
@@ -439,55 +393,29 @@ document.write(`
 <h1>audio visual<a class="headerlink" href="#audio-visual" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.constants</span> <span class="k">as</span> <span class="nn">const</span>
-<span class="kn">import</span> <span class="nn">scipy</span>
-<span class="kn">from</span> <span class="nn">scipy.io</span> <span class="kn">import</span> <span class="n">wavfile</span>
-<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># wavPlayer(&#39;../asset/audio/1_kan.mp3&#39;)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">wavPlayer</span><span class="p">(</span><span class="n">filepath</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; will display html 5 player for compatible browser</span>
-
-<span class="sd">    Parameters :</span>
-<span class="sd">    ------------</span>
-<span class="sd">    filepath : relative filepath with respect to the notebook directory ( where the .ipynb are not cwd)</span>
-<span class="sd">               of the file to play</span>
-
-<span class="sd">    The browser need to know how to play wav through html5.</span>
-
-<span class="sd">    there is no autoplay to prevent file playing when the browser opens</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    
-    <span class="n">src</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">    &lt;head&gt;</span>
-<span class="s2">    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;</span>
-<span class="s2">    &lt;title&gt;Simple Test&lt;/title&gt;</span>
-<span class="s2">    &lt;/head&gt;</span>
-<span class="s2">    </span>
-<span class="s2">    &lt;body&gt;</span>
-<span class="s2">    &lt;audio controls=&quot;controls&quot; style=&quot;width:250px&quot; &gt;</span>
-<span class="s2">      &lt;source src=&quot;files/</span><span class="si">%s</span><span class="s2">&quot; type=&quot;audio/wav&quot; /&gt;</span>
-<span class="s2">      Your browser does not support the audio element.</span>
-<span class="s2">    &lt;/audio&gt;</span>
-<span class="s2">    &lt;/body&gt;</span>
-<span class="s2">    &quot;&quot;&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span>
-    <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">src</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">package</span>
+<span class="kn">from</span> <span class="nn">package</span> <span class="kn">import</span> <span class="n">audio</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">wavPlayer</span><span class="p">(</span><span class="s1">&#39;../asset/audio/1_kan.mp3&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s2">&quot;../resource/asset/audio/1_kan.mp3&quot;</span><span class="p">,</span><span class="s1">&#39;LOCAL&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../resource/asset/audio/1_kan.mp3
+</pre></div>
+</div>
 <div class="output text_html">
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -496,7 +424,7 @@ document.write(`
     
     <body>
     <audio controls="controls" style="width:250px" >
-      <source src="files/../asset/audio/1_kan.mp3" type="audio/wav" />
+      <source src="files/../resource/asset/audio/1_kan.mp3" type="audio/wav" />
       Your browser does not support the audio element.
     </audio>
     </body>
