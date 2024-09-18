@@ -1,37 +1,19 @@
-from __future__ import division
-import scipy.constants as const
-import scipy
-from scipy.io import wavfile
+
 from IPython.core.display import HTML
+import pandas as pd
+from IPython.display import HTML
+from package import audio
 
-def player(filePath:str,env:str) -> None:
-    path = getPath(filePath,env)
-    """ will display html 5 player for compatible browser
-
-    Parameters :
-    ------------
-    filepath : relative filepath with respect to the notebook directory ( where the .ipynb are not cwd)
-               of the file to play
-
-    The browser need to know how to play wav through html5.
-
-    there is no autoplay to prevent file playing when the browser opens
-    """
+def player(filePath: str, env: str) -> str:
+    path = getPath(filePath, env)
     
-    src = """
-    <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Simple Test</title>
-    </head>
+    # HTML for the audio player without newlines
+    audio_html = '''<audio controls style="width:150px">
+                      <source src="{}" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                    </audio>'''.format(path)
     
-    <body>
-    <audio controls="controls" style="width:250px" >
-      <source src="files/%s" type="audio/wav" />
-      Your browser does not support the audio element.
-    </audio>
-    </body>
-    """%(path)
-    display(HTML(src))
+    return audio_html
 
 
 def getPath(path:str,env: str) -> str:
