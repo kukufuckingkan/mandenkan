@@ -213,7 +213,6 @@
 </ul>
 </details></li>
 <li class="toctree-l2"><a class="reference internal" href="english/3_alphabet/3_letter.html">letter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="english/3_alphabet/4_vowel.html">vowel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="english/3_alphabet/5_consonant.html">Consonant</a></li>
 <li class="toctree-l2"><a class="reference internal" href="english/3_alphabet/6_number.html">Number</a></li>
 <li class="toctree-l2"><a class="reference internal" href="english/3_alphabet/7_%DF%92_character.html">Character ߒ</a></li>
@@ -393,39 +392,133 @@ document.write(`
 <h1>audio visual<a class="headerlink" href="#audio-visual" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># wavPlayer(&#39;../asset/audio/1_kan.mp3&#39;)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">package</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
 <span class="kn">from</span> <span class="nn">package</span> <span class="kn">import</span> <span class="n">audio</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s2">&quot;../resource/asset/audio/1_kan.mp3&quot;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">)</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;Vowel&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;ߊ&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;ߋ&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;ߌ&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;ߍ&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;ߎ&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;ߏ&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;ߐ&#39;</span><span class="p">,</span>
+             <span class="p">],</span>
+    
+    <span class="s1">&#39;Sound&#39;</span><span class="p">:</span> 
+    <span class="p">[</span>
+    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">),</span>
+    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">),</span>
+    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">),</span>
+    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">),</span>
+    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">),</span>
+    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">),</span>
+    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">),</span>
+    <span class="p">]</span>
+<span class="p">})</span>
+
+
+<span class="n">HTML</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">escape</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html">
-    <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Simple Test</title>
-    </head>
-    
-    <body>
-    <audio controls="controls" style="width:250px" >
-      <source src="files/../asset/audio/1_kan.mp3" type="audio/wav" />
-      Your browser does not support the audio element.
-    </audio>
-    </body>
-    </div></div>
+<div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Vowel</th>
+      <th>Sound</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ߊ</td>
+      <td><audio controls style="width:150px">\n                      <source src="resource/asset/audio/1_kan.mp3" type="audio/mpeg">\n                      Your browser does not support the audio element.\n                    </audio></td>
+    </tr>
+    <tr>
+      <td>ߋ</td>
+      <td><audio controls style="width:150px">\n                      <source src="resource/asset/audio/1_kan.mp3" type="audio/mpeg">\n                      Your browser does not support the audio element.\n                    </audio></td>
+    </tr>
+    <tr>
+      <td>ߌ</td>
+      <td><audio controls style="width:150px">\n                      <source src="resource/asset/audio/1_kan.mp3" type="audio/mpeg">\n                      Your browser does not support the audio element.\n                    </audio></td>
+    </tr>
+    <tr>
+      <td>ߍ</td>
+      <td><audio controls style="width:150px">\n                      <source src="resource/asset/audio/1_kan.mp3" type="audio/mpeg">\n                      Your browser does not support the audio element.\n                    </audio></td>
+    </tr>
+    <tr>
+      <td>ߎ</td>
+      <td><audio controls style="width:150px">\n                      <source src="resource/asset/audio/1_kan.mp3" type="audio/mpeg">\n                      Your browser does not support the audio element.\n                    </audio></td>
+    </tr>
+    <tr>
+      <td>ߏ</td>
+      <td><audio controls style="width:150px">\n                      <source src="resource/asset/audio/1_kan.mp3" type="audio/mpeg">\n                      Your browser does not support the audio element.\n                    </audio></td>
+    </tr>
+    <tr>
+      <td>ߐ</td>
+      <td><audio controls style="width:150px">\n                      <source src="resource/asset/audio/1_kan.mp3" type="audio/mpeg">\n                      Your browser does not support the audio element.\n                    </audio></td>
+    </tr>
+  </tbody>
+</table></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Sample DataFrame</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;Charlie&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Age&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">35</span><span class="p">],</span>
+        <span class="s1">&#39;City&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;New York&#39;</span><span class="p">,</span> <span class="s1">&#39;San Francisco&#39;</span><span class="p">,</span> <span class="s1">&#39;Chicago&#39;</span><span class="p">]}</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="c1"># Center-align all the cells</span>
+<span class="n">df_styled</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_properties</span><span class="p">(</span><span class="o">**</span><span class="p">{</span><span class="s1">&#39;text-align&#39;</span><span class="p">:</span> <span class="s1">&#39;center&#39;</span><span class="p">})</span>
+
+<span class="c1"># Display the DataFrame</span>
+<span class="n">df_styled</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style type="text/css">
+#T_f4657_row0_col0, #T_f4657_row0_col1, #T_f4657_row0_col2, #T_f4657_row1_col0, #T_f4657_row1_col1, #T_f4657_row1_col2, #T_f4657_row2_col0, #T_f4657_row2_col1, #T_f4657_row2_col2 {
+  text-align: center;
+}
+</style>
+<table id="T_f4657">
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_f4657_level0_col0" class="col_heading level0 col0" >Name</th>
+      <th id="T_f4657_level0_col1" class="col_heading level0 col1" >Age</th>
+      <th id="T_f4657_level0_col2" class="col_heading level0 col2" >City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_f4657_level0_row0" class="row_heading level0 row0" >0</th>
+      <td id="T_f4657_row0_col0" class="data row0 col0" >Alice</td>
+      <td id="T_f4657_row0_col1" class="data row0 col1" >25</td>
+      <td id="T_f4657_row0_col2" class="data row0 col2" >New York</td>
+    </tr>
+    <tr>
+      <th id="T_f4657_level0_row1" class="row_heading level0 row1" >1</th>
+      <td id="T_f4657_row1_col0" class="data row1 col0" >Bob</td>
+      <td id="T_f4657_row1_col1" class="data row1 col1" >30</td>
+      <td id="T_f4657_row1_col2" class="data row1 col2" >San Francisco</td>
+    </tr>
+    <tr>
+      <th id="T_f4657_level0_row2" class="row_heading level0 row2" >2</th>
+      <td id="T_f4657_row2_col0" class="data row2 col0" >Charlie</td>
+      <td id="T_f4657_row2_col1" class="data row2 col1" >35</td>
+      <td id="T_f4657_row2_col2" class="data row2 col2" >Chicago</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
 </div>
 </section>
 
