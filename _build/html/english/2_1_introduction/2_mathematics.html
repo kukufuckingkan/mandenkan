@@ -32,9 +32,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css?v=b4b7a797" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -214,6 +214,7 @@
 </ul>
 </details></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_alphabet/3_letter.html">letter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_alphabet/4_vowel.html">vowel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_alphabet/5_consonant.html">Consonant</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_alphabet/6_number.html">Number</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_alphabet/7_%DF%92_character.html">Character ߒ</a></li>
@@ -223,10 +224,17 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../4_grammar/1_index.html">Grammar</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../4_grammar/2_noun.html">Noun</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../4_grammar/3_pronoun.html">pronoun</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../4_grammar/3_pronoun.html">Pronoun</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../4_grammar/3_1_pronoun/1_personal_pronoun.html">Personal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../4_grammar/3_1_pronoun/2_possessive.html">Possessive</a></li>
+</ul>
+</details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../4_grammar/4_adjective.html">adjective</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../4_grammar/4_1_adjective/1_index.html">table of content</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../4_grammar/4_1_adjective/2_attachable.html">attachable</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../4_grammar/4_1_adjective/2_attachable.html">attachable</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../4_grammar/4_1_adjective/verbal_attachable.html">verbal attachable</a></li>
+</ul>
+</details></li>
 <li class="toctree-l3"><a class="reference internal" href="../4_grammar/4_1_adjective/3_unattachable.html">unattachable</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../4_grammar/4_1_adjective/4_intermediate.html">intermediate</a></li>
 </ul>
@@ -239,6 +247,15 @@
 <li class="toctree-l2"><a class="reference internal" href="../../audio.html">audio visual</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../5_time.html">Time</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../5_1_time/1_time.html">Time stuff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_1_time/2_month.html">month</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Francais</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../french/alphabet/1_vowel.html">Alphabet</a></li>
 </ul>
 
     </div>
@@ -392,48 +409,10 @@ document.write(`
   <section id="mathematics-note">
 <h1>Mathematics note<a class="headerlink" href="#mathematics-note" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">binarytree</span> <span class="kn">import</span> <span class="n">Node</span>
-<span class="n">root</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s1">&#39;Word&#39;</span><span class="p">)</span>
-<span class="n">left</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s1">&#39;attribute&#39;</span><span class="p">)</span>
-<span class="n">right</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s1">&#39;attribute&#39;</span><span class="p">)</span>
-
-<span class="n">root</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s1">&#39;quality&#39;</span><span class="p">)</span>
-<span class="n">root</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s1">&#39;quality&#39;</span><span class="p">)</span>
-
-<span class="n">root</span><span class="o">.</span><span class="n">right</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s1">&#39;quality&#39;</span><span class="p">)</span>
-<span class="n">root</span><span class="o">.</span><span class="n">right</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s1">&#39;quality&#39;</span><span class="p">)</span>
-
-<span class="n">root</span><span class="o">.</span><span class="n">right</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">Node</span> <span class="p">(</span><span class="s1">&#39;feature&#39;</span><span class="p">)</span>
-<span class="n">root</span><span class="o">.</span><span class="n">right</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">Node</span> <span class="p">(</span><span class="s1">&#39;feature&#39;</span><span class="p">)</span>
-
-<span class="n">root</span><span class="o">.</span><span class="n">right</span><span class="o">.</span><span class="n">right</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">Node</span> <span class="p">(</span><span class="s1">&#39;feature&#39;</span><span class="p">)</span>
-<span class="n">root</span><span class="o">.</span><span class="n">right</span><span class="o">.</span><span class="n">right</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">Node</span> <span class="p">(</span><span class="s1">&#39;feature&#39;</span><span class="p">)</span>
-
-<span class="n">root</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">Node</span> <span class="p">(</span><span class="s1">&#39;feature&#39;</span><span class="p">)</span>
-<span class="n">root</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">Node</span> <span class="p">(</span><span class="s1">&#39;feature&#39;</span><span class="p">)</span>
-
-<span class="n">root</span><span class="o">.</span><span class="n">graphviz</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
 <div class="cell_output docutils container">
 <img alt="../../_images/73cd5179076cfb6059492bc1c402a4d4c105fcb65577743e11b9ada8f7e2e91a.svg" src="../../_images/73cd5179076cfb6059492bc1c402a4d4c105fcb65577743e11b9ada8f7e2e91a.svg" /></div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">treelib</span> <span class="kn">import</span> <span class="n">Node</span><span class="p">,</span> <span class="n">Tree</span>
-<span class="n">tree</span> <span class="o">=</span> <span class="n">Tree</span><span class="p">()</span>
-<span class="n">tree</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="s2">&quot;Harry&quot;</span><span class="p">,</span> <span class="s2">&quot;harry&quot;</span><span class="p">)</span>  <span class="c1"># root node</span>
-<span class="n">tree</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="s2">&quot;Jane&quot;</span><span class="p">,</span> <span class="s2">&quot;jane&quot;</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="s2">&quot;harry&quot;</span><span class="p">)</span>
-<span class="n">tree</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="s2">&quot;Bill&quot;</span><span class="p">,</span> <span class="s2">&quot;bill&quot;</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="s2">&quot;harry&quot;</span><span class="p">)</span>
-<span class="n">tree</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="s2">&quot;Diane&quot;</span><span class="p">,</span> <span class="s2">&quot;diane&quot;</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="s2">&quot;jane&quot;</span><span class="p">)</span>
-<span class="n">tree</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="s2">&quot;Mary&quot;</span><span class="p">,</span> <span class="s2">&quot;mary&quot;</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="s2">&quot;diane&quot;</span><span class="p">)</span>
-<span class="n">tree</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="s2">&quot;Mark&quot;</span><span class="p">,</span> <span class="s2">&quot;mark&quot;</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="s2">&quot;jane&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Harry
 ├── Bill

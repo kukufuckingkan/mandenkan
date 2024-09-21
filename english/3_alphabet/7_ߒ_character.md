@@ -1,7 +1,7 @@
 
 (english_alphabet_ߒ)=
 # Character ߒ
-
+## ߞߊ߲ߣߊߘߌߦߊߟߊ߲
 The nasal character, ߒ , is used to pronounce vowels from the nostril. It can be understood as being the letter n
 produced from the nose.
 The sounds n, can be produced either through inspiration, expiration or respiration. Expiration refers to

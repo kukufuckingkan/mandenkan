@@ -32,9 +32,9 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css?v=b4b7a797" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -214,6 +214,7 @@
 </ul>
 </details></li>
 <li class="toctree-l2"><a class="reference internal" href="english/3_alphabet/3_letter.html">letter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="english/3_alphabet/4_vowel.html">vowel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="english/3_alphabet/5_consonant.html">Consonant</a></li>
 <li class="toctree-l2"><a class="reference internal" href="english/3_alphabet/6_number.html">Number</a></li>
 <li class="toctree-l2"><a class="reference internal" href="english/3_alphabet/7_%DF%92_character.html">Character ߒ</a></li>
@@ -223,10 +224,17 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="english/4_grammar/1_index.html">Grammar</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="english/4_grammar/2_noun.html">Noun</a></li>
-<li class="toctree-l2"><a class="reference internal" href="english/4_grammar/3_pronoun.html">pronoun</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="english/4_grammar/3_pronoun.html">Pronoun</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="english/4_grammar/3_1_pronoun/1_personal_pronoun.html">Personal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="english/4_grammar/3_1_pronoun/2_possessive.html">Possessive</a></li>
+</ul>
+</details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="english/4_grammar/4_adjective.html">adjective</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="english/4_grammar/4_1_adjective/1_index.html">table of content</a></li>
-<li class="toctree-l3"><a class="reference internal" href="english/4_grammar/4_1_adjective/2_attachable.html">attachable</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="english/4_grammar/4_1_adjective/2_attachable.html">attachable</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="english/4_grammar/4_1_adjective/verbal_attachable.html">verbal attachable</a></li>
+</ul>
+</details></li>
 <li class="toctree-l3"><a class="reference internal" href="english/4_grammar/4_1_adjective/3_unattachable.html">unattachable</a></li>
 <li class="toctree-l3"><a class="reference internal" href="english/4_grammar/4_1_adjective/4_intermediate.html">intermediate</a></li>
 </ul>
@@ -239,6 +247,15 @@
 <li class="toctree-l2"><a class="reference internal" href="audio.html">audio visual</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="english/5_time.html">Time</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="english/5_1_time/1_time.html">Time stuff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="english/5_1_time/2_month.html">month</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Francais</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="french/alphabet/1_vowel.html">Alphabet</a></li>
 </ul>
 
     </div>
@@ -409,19 +426,6 @@ document.write(`
 <section id="the-command-below-create-a-folder-of-name-mynewbookname-inside-the-created-folder-you-will-find-files-of-the-book">
 <h1>the command below create a folder of name mynewbookname. inside the created folder, you will find files of the book<a class="headerlink" href="#the-command-below-create-a-folder-of-name-mynewbookname-inside-the-created-folder-you-will-find-files-of-the-book" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">create</span> <span class="n">mynewbook</span><span class="o">/</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-    <span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">create</span> <span class="n">mynewbook</span><span class="o">/</span>
-                 <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="navigate-into-parent-folder-of-your-book-and-run">
@@ -430,55 +434,14 @@ document.write(`
 <section id="this-will-generate-a-pdf-file-in-the-folder-named-build-inside-mynewbook">
 <h1>this will generate a pdf file in the folder named build inside mynewbook<a class="headerlink" href="#this-will-generate-a-pdf-file-in-the-folder-named-build-inside-mynewbook" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># navigate into parent folder of your book and run. This will gene</span>
-<span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="n">kitab</span><span class="o">/</span> <span class="o">--</span><span class="n">builder</span> <span class="n">pdfhtml</span>
-
-<span class="c1">#if inside book itself</span>
-
-<span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="o">./</span> <span class="o">--</span><span class="n">builder</span> <span class="n">pdfhtml</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># if table of content does become updated</span>
-<span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="o">--</span><span class="nb">all</span> <span class="n">mybookname</span><span class="o">/</span>
-<span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="o">--</span><span class="nb">all</span> <span class="o">.</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># configure git token</span>
-<span class="n">git</span> <span class="n">remote</span> <span class="nb">set</span><span class="o">-</span><span class="n">url</span> <span class="n">origin</span> <span class="n">https</span><span class="p">:</span><span class="o">//&lt;</span><span class="n">TOKEN</span><span class="o">&gt;</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">username</span><span class="o">/</span><span class="n">repository</span><span class="o">.</span><span class="n">git</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#publish to github pages</span>
-<span class="n">pip</span> <span class="n">install</span> <span class="n">ghp</span><span class="o">-</span><span class="kn">import</span>
-<span class="nn">ghp</span><span class="o">-</span><span class="kn">import</span> <span class="o">-</span><span class="n">n</span> <span class="o">-</span><span class="n">p</span> <span class="o">-</span><span class="n">f</span> <span class="n">_build</span><span class="o">/</span><span class="n">html</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">-</span><span class="n">f</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
-<span class="n">conda</span> <span class="n">activate</span> <span class="n">qe</span><span class="o">-</span><span class="n">mini</span><span class="o">-</span><span class="n">example</span>
-<span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
-
-
-<span class="kn">import</span> <span class="nn">sys</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
     <span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">-</span><span class="n">f</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
@@ -489,50 +452,16 @@ document.write(`
 </div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">firefox</span> <span class="n">mini_book</span><span class="o">/</span><span class="n">_build</span><span class="o">/</span><span class="n">html</span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">html</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># rebuild html after change</span>
-<span class="n">jb</span> <span class="n">build</span> <span class="o">.</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">docutils</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># configure sphinx</span>
-<span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">config</span> <span class="n">sphinx</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">book</span>
-<span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">config</span> <span class="n">sphinx</span> <span class="o">.</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="o">-</span><span class="n">build</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">book</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">book</span><span class="o">/</span><span class="n">_build</span><span class="o">/</span><span class="n">html</span> <span class="o">-</span><span class="n">b</span> <span class="n">html</span>
-<span class="n">sphinx</span><span class="o">-</span><span class="n">build</span> <span class="o">.</span> <span class="o">./</span><span class="n">_build</span><span class="o">/</span><span class="n">html</span> <span class="o">-</span><span class="n">b</span> <span class="n">html</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">homebrew</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">pip3</span>
-</pre></div>
-</div>
-</div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
@@ -545,101 +474,31 @@ document.write(`
 </div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">venv</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">venv</span>
-    <span class="n">source</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">venv</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
-    <span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">xyz</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alias</span> <span class="n">pip</span><span class="o">=</span><span class="s1">&#39;pip3&#39;</span>
-<span class="n">pip</span> <span class="mf">24.2</span> <span class="kn">from</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">homebrew</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">pip</span> <span class="p">(</span><span class="n">python</span> <span class="mf">3.12</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">homebrew</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">pip</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">PATH</span><span class="o">=</span><span class="s2">&quot;/opt/homebrew/lib/python3.12/site-packages/pip:$PATH&quot;</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipx</span> <span class="n">install</span> <span class="n">matplotlib</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create new virtual env pip</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">venv</span> <span class="o">~/</span><span class="n">python</span><span class="o">-</span><span class="n">envs</span><span class="o">/</span><span class="n">kukukan</span>
-<span class="n">source</span> <span class="o">~/</span><span class="n">python</span><span class="o">-</span><span class="n">envs</span><span class="o">/</span><span class="n">kukukan</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
-<span class="n">deactivate</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">venv</span> <span class="n">kukukan</span>
-<span class="n">source</span> <span class="n">kukukan</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
-<span class="n">conda</span> <span class="n">activate</span> <span class="n">kukukan</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">--</span><span class="n">name</span> <span class="n">kukukan</span>
-<span class="n">conda</span> <span class="n">activate</span> <span class="n">kukukan</span>
-<span class="n">conda</span> <span class="nb">list</span>
-</pre></div>
-</div>
-</div>
 </div>
 <p>python -m ipykernel install –user –name=kukukan –display-name “Python (kukukan)”</p>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>list
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">-</span><span class="n">f</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
-<span class="n">conda</span> <span class="n">activate</span> <span class="n">kukukan</span>
-<span class="n">conda</span> <span class="n">deactivate</span>
-</pre></div>
 </div>
-</div>
+<div class="cell docutils container">
 </div>
 </section>
 

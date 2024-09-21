@@ -42,6 +42,7 @@ sphinx:
     bibtex_reference_style: author_year
     html_extra_path: ["resource"]
     html_favicon: favicon.ico
+    nb_remove_code_source: true
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     
 parse:
@@ -52,8 +53,11 @@ parse:
 
 html:
     favicon : "favicon.ico"
-# execute:
-#   hide_input: true 
+
+execute:
+  execute_notebooks: "off"
+  remove_input: true
+
   
 # execute:
 #   execute_notebooks: true  # This ensures that the notebooks are executed during the build process

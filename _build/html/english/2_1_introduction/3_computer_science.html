@@ -32,9 +32,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css?v=b4b7a797" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -214,6 +214,7 @@
 </ul>
 </details></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_alphabet/3_letter.html">letter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_alphabet/4_vowel.html">vowel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_alphabet/5_consonant.html">Consonant</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_alphabet/6_number.html">Number</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_alphabet/7_%DF%92_character.html">Character ߒ</a></li>
@@ -223,10 +224,17 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../4_grammar/1_index.html">Grammar</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../4_grammar/2_noun.html">Noun</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../4_grammar/3_pronoun.html">pronoun</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../4_grammar/3_pronoun.html">Pronoun</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../4_grammar/3_1_pronoun/1_personal_pronoun.html">Personal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../4_grammar/3_1_pronoun/2_possessive.html">Possessive</a></li>
+</ul>
+</details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../4_grammar/4_adjective.html">adjective</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../4_grammar/4_1_adjective/1_index.html">table of content</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../4_grammar/4_1_adjective/2_attachable.html">attachable</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../4_grammar/4_1_adjective/2_attachable.html">attachable</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../4_grammar/4_1_adjective/verbal_attachable.html">verbal attachable</a></li>
+</ul>
+</details></li>
 <li class="toctree-l3"><a class="reference internal" href="../4_grammar/4_1_adjective/3_unattachable.html">unattachable</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../4_grammar/4_1_adjective/4_intermediate.html">intermediate</a></li>
 </ul>
@@ -239,6 +247,15 @@
 <li class="toctree-l2"><a class="reference internal" href="../../audio.html">audio visual</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../5_time.html">Time</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../5_1_time/1_time.html">Time stuff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_1_time/2_month.html">month</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Francais</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../french/alphabet/1_vowel.html">Alphabet</a></li>
 </ul>
 
     </div>
@@ -400,71 +417,36 @@ document.write(`
                 <article class="bd-article">
                   
   <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matplotlib is building the font cache; this may take a moment.
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">G</span><span class="o">.</span><span class="n">add_nodes_from</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-<span class="n">G</span><span class="o">.</span><span class="n">add_nodes_from</span><span class="p">([(</span><span class="mi">4</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;red&quot;</span><span class="p">}),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;green&quot;</span><span class="p">})])</span>
+</div>
+<div class="cell docutils container">
+</div>
+<div class="cell docutils container">
+<div class="cell_output docutils container">
+<img alt="../../_images/e242f1ffa794dad0325d376831d2d52813149c7a43a3019f2f1fed3df6e20172.png" src="../../_images/e242f1ffa794dad0325d376831d2d52813149c7a43a3019f2f1fed3df6e20172.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">22</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">subax1</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
-<span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="n">e</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="o">*</span><span class="n">e</span><span class="p">)</span>  <span class="c1"># unpack edge tuple*</span>
-<span class="n">G</span><span class="o">.</span><span class="n">add_edges_from</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)])</span>
+<span class="ne">AttributeError</span>: &#39;Axes&#39; object has no attribute &#39;show&#39;
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">H</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">path_graph</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="n">G</span><span class="o">.</span><span class="n">add_nodes_from</span><span class="p">(</span><span class="n">H</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">petersen_graph</span><span class="p">()</span>
-<span class="n">subax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
-<span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">font_weight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
-<span class="n">subax2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
-<span class="n">nx</span><span class="o">.</span><span class="n">draw_shell</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">nlist</span><span class="o">=</span><span class="p">[</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)],</span> <span class="n">with_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">font_weight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
 <div class="cell_output docutils container">
-<img alt="../../_images/5db9688cbf1a61ae887df15ab1bbb7a71fcbbe761ec9f7771306f6267a4788e1.png" src="../../_images/5db9688cbf1a61ae887df15ab1bbb7a71fcbbe761ec9f7771306f6267a4788e1.png" />
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pydo</span>
-<span class="n">graph</span> <span class="n">mygraph</span> <span class="p">{</span>
-    <span class="n">bgcolor</span><span class="o">=</span><span class="s2">&quot;yellow&quot;</span><span class="p">;</span>
-    <span class="n">a</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Foo&quot;</span><span class="p">];</span>
-    <span class="n">b</span> <span class="p">[</span><span class="n">shape</span><span class="o">=</span><span class="n">circle</span><span class="p">];</span>
-    <span class="n">a</span> <span class="o">--</span> <span class="n">b</span> <span class="o">--</span> <span class="n">c</span> <span class="p">[</span><span class="n">color</span><span class="o">=</span><span class="n">blue</span><span class="p">];</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">26</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
     <span class="n">graph</span> <span class="n">mygraph</span> <span class="p">{</span>
           <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -473,14 +455,6 @@ document.write(`
 </div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pydot</span>
-
-<span class="n">graphs</span> <span class="o">=</span> <span class="n">pydot</span><span class="o">.</span><span class="n">graph_from_dot_file</span><span class="p">(</span><span class="s2">&quot;example.dot&quot;</span><span class="p">)</span>
-<span class="n">graph</span> <span class="o">=</span> <span class="n">graphs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
@@ -507,26 +481,6 @@ document.write(`
 </div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pydot</span>
-
-<span class="n">graph</span> <span class="o">=</span> <span class="n">pydot</span><span class="o">.</span><span class="n">Dot</span><span class="p">(</span><span class="s2">&quot;my_graph&quot;</span><span class="p">,</span> <span class="n">graph_type</span><span class="o">=</span><span class="s2">&quot;graph&quot;</span><span class="p">,</span> <span class="n">bgcolor</span><span class="o">=</span><span class="s2">&quot;yellow&quot;</span><span class="p">)</span>
-
-<span class="c1"># Add nodes</span>
-<span class="n">my_node</span> <span class="o">=</span> <span class="n">pydot</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Foo&quot;</span><span class="p">)</span>
-<span class="n">graph</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">my_node</span><span class="p">)</span>
-<span class="c1"># Or, without using an intermediate variable:</span>
-<span class="n">graph</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">pydot</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="s2">&quot;circle&quot;</span><span class="p">))</span>
-
-<span class="c1"># Add edges</span>
-<span class="n">my_edge</span> <span class="o">=</span> <span class="n">pydot</span><span class="o">.</span><span class="n">Edge</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
-<span class="n">graph</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">my_edge</span><span class="p">)</span>
-<span class="c1"># Or, without using an intermediate variable:</span>
-<span class="n">graph</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">pydot</span><span class="o">.</span><span class="n">Edge</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">))</span>
-<span class="n">graph</span>
-</pre></div>
-</div>
-</div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pydot.core.Dot at 0x102db5c10&gt;
 </pre></div>
@@ -534,43 +488,14 @@ document.write(`
 </div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">graph</span><span class="o">.</span><span class="n">write_png</span><span class="p">(</span><span class="s2">&quot;output.png&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">output_graphviz_svg</span> <span class="o">=</span> <span class="n">graph</span><span class="o">.</span><span class="n">create_svg</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">keras</span><span class="p">,</span><span class="n">tensorflow</span><span class="p">,</span><span class="n">skitlearn</span><span class="p">,</span> <span class="n">machine</span> <span class="n">learning</span> <span class="n">book</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygraphviz</span> <span class="k">as</span> <span class="nn">pgv</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G</span> <span class="o">=</span> <span class="n">pgv</span><span class="o">.</span><span class="n">AGraph</span><span class="p">(</span><span class="n">ranksep</span><span class="o">=</span><span class="s2">&quot;0.1&quot;</span><span class="p">)</span>
-<span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
-<span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
-<span class="n">G</span><span class="o">.</span><span class="n">layout</span><span class="p">()</span>
-<span class="n">G</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="s2">&quot;file.png&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
 </div>
 
     <script type="text/x-thebe-config">

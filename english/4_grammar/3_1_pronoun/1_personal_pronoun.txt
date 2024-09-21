@@ -1,5 +1,0 @@
-
-(english_pronoun.personal_pronoun)=
-# personal pronoun
-
-this is the page for personal pronoun

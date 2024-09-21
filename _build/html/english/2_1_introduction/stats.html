@@ -32,9 +32,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css?v=b4b7a797" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -214,6 +214,7 @@
 </ul>
 </details></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_alphabet/3_letter.html">letter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_alphabet/4_vowel.html">vowel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_alphabet/5_consonant.html">Consonant</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_alphabet/6_number.html">Number</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_alphabet/7_%DF%92_character.html">Character ߒ</a></li>
@@ -223,10 +224,17 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../4_grammar/1_index.html">Grammar</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../4_grammar/2_noun.html">Noun</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../4_grammar/3_pronoun.html">pronoun</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../4_grammar/3_pronoun.html">Pronoun</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../4_grammar/3_1_pronoun/1_personal_pronoun.html">Personal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../4_grammar/3_1_pronoun/2_possessive.html">Possessive</a></li>
+</ul>
+</details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../4_grammar/4_adjective.html">adjective</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../4_grammar/4_1_adjective/1_index.html">table of content</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../4_grammar/4_1_adjective/2_attachable.html">attachable</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../4_grammar/4_1_adjective/2_attachable.html">attachable</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../4_grammar/4_1_adjective/verbal_attachable.html">verbal attachable</a></li>
+</ul>
+</details></li>
 <li class="toctree-l3"><a class="reference internal" href="../4_grammar/4_1_adjective/3_unattachable.html">unattachable</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../4_grammar/4_1_adjective/4_intermediate.html">intermediate</a></li>
 </ul>
@@ -239,6 +247,15 @@
 <li class="toctree-l2"><a class="reference internal" href="../../audio.html">audio visual</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../5_time.html">Time</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../5_1_time/1_time.html">Time stuff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_1_time/2_month.html">month</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Francais</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../french/alphabet/1_vowel.html">Alphabet</a></li>
 </ul>
 
     </div>
@@ -400,26 +417,8 @@ document.write(`
                 <article class="bd-article">
                   
   <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">statistics</span> <span class="kn">import</span> <span class="n">median</span>
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">isnan</span>
-<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">filterfalse</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mf">20.7</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;NaN&#39;</span><span class="p">),</span><span class="mf">19.2</span><span class="p">,</span> <span class="mf">18.3</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;NaN&#39;</span><span class="p">),</span> <span class="mf">14.4</span><span class="p">]</span>
-<span class="nb">sorted</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">median</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="nb">sum</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">isnan</span><span class="p">,</span> <span class="n">data</span><span class="p">))</span>
-<span class="n">clean</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">filterfalse</span><span class="p">(</span><span class="n">isnan</span><span class="p">,</span> <span class="n">data</span><span class="p">))</span> 
-<span class="nb">sorted</span><span class="p">(</span><span class="n">clean</span><span class="p">)</span>
-<span class="n">median</span><span class="p">(</span><span class="n">clean</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>18.75
 </pre></div>
@@ -427,95 +426,57 @@ document.write(`
 </div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="kn">from</span> <span class="nn">plottable</span> <span class="kn">import</span> <span class="n">Table</span>
-
-<span class="n">d</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="s2">&quot;E&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
-<span class="n">tab</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
 <div class="cell_output docutils container">
-<img alt="../../_images/f82288f8aebfced44e3008e0d5ebf3651aef88ece8f8e0ba8f53a844c461f234.png" src="../../_images/f82288f8aebfced44e3008e0d5ebf3651aef88ece8f8e0ba8f53a844c461f234.png" />
+<img alt="../../_images/67a342dd608142e03a17ec27c646071a9f7aeebbb191a778acbfa3f5b23061a3.png" src="../../_images/67a342dd608142e03a17ec27c646071a9f7aeebbb191a778acbfa3f5b23061a3.png" />
 </div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">great_tables</span> <span class="kn">import</span> <span class="n">GT</span>
-<span class="kn">from</span> <span class="nn">great_tables.data</span> <span class="kn">import</span> <span class="n">sp500</span>
-
-<span class="c1"># Define the start and end dates for the data range</span>
-<span class="n">start_date</span> <span class="o">=</span> <span class="s2">&quot;2010-06-07&quot;</span>
-<span class="n">end_date</span> <span class="o">=</span> <span class="s2">&quot;2010-06-14&quot;</span>
-
-<span class="c1"># Filter sp500 using Pandas to dates between `start_date` and `end_date`</span>
-<span class="n">sp500_mini</span> <span class="o">=</span> <span class="n">sp500</span><span class="p">[(</span><span class="n">sp500</span><span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">start_date</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">sp500</span><span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">end_date</span><span class="p">)]</span>
-
-<span class="c1"># Create a display table based on the `sp500_mini` table data</span>
-<span class="p">(</span>
-    <span class="n">GT</span><span class="p">(</span><span class="n">sp500_mini</span><span class="p">)</span>
-    <span class="o">.</span><span class="n">tab_header</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;S&amp;P 500&quot;</span><span class="p">,</span> <span class="n">subtitle</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">start_date</span><span class="si">}</span><span class="s2"> to </span><span class="si">{</span><span class="n">end_date</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="o">.</span><span class="n">fmt_currency</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;open&quot;</span><span class="p">,</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span><span class="p">,</span> <span class="s2">&quot;close&quot;</span><span class="p">])</span>
-    <span class="o">.</span><span class="n">fmt_date</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="n">date_style</span><span class="o">=</span><span class="s2">&quot;wd_m_day_year&quot;</span><span class="p">)</span>
-    <span class="o">.</span><span class="n">fmt_number</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s2">&quot;volume&quot;</span><span class="p">,</span> <span class="n">compact</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="o">.</span><span class="n">cols_hide</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s2">&quot;adj_close&quot;</span><span class="p">)</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="wonpvnyqto" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div class="output text_html"><div id="fewybnmxqr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>
-#wonpvnyqto table {
+#fewybnmxqr table {
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
         }
 
-#wonpvnyqto thead, tbody, tfoot, tr, td, th { border-style: none; }
+#fewybnmxqr thead, tbody, tfoot, tr, td, th { border-style: none; }
  tr { background-color: transparent; }
-#wonpvnyqto p { margin: 0; padding: 0; }
- #wonpvnyqto .gt_table { display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; }
- #wonpvnyqto .gt_caption { padding-top: 4px; padding-bottom: 4px; }
- #wonpvnyqto .gt_title { color: #333333; font-size: 125%; font-weight: initial; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; border-bottom-color: #FFFFFF; border-bottom-width: 0; }
- #wonpvnyqto .gt_subtitle { color: #333333; font-size: 85%; font-weight: initial; padding-top: 3px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; border-top-color: #FFFFFF; border-top-width: 0; }
- #wonpvnyqto .gt_heading { background-color: #FFFFFF; text-align: center; border-bottom-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
- #wonpvnyqto .gt_bottom_border { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
- #wonpvnyqto .gt_col_headings { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
- #wonpvnyqto .gt_col_heading { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; }
- #wonpvnyqto .gt_column_spanner_outer { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; padding-top: 0; padding-bottom: 0; padding-left: 4px; padding-right: 4px; }
- #wonpvnyqto .gt_column_spanner_outer:first-child { padding-left: 0; }
- #wonpvnyqto .gt_column_spanner_outer:last-child { padding-right: 0; }
- #wonpvnyqto .gt_column_spanner { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; overflow-x: hidden; display: inline-block; width: 100%; }
- #wonpvnyqto .gt_spanner_row { border-bottom-style: hidden; }
- #wonpvnyqto .gt_group_heading { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; text-align: left; }
- #wonpvnyqto .gt_empty_group_heading { padding: 0.5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: middle; }
- #wonpvnyqto .gt_from_md> :first-child { margin-top: 0; }
- #wonpvnyqto .gt_from_md> :last-child { margin-bottom: 0; }
- #wonpvnyqto .gt_row { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; }
- #wonpvnyqto .gt_stub { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; }
- #wonpvnyqto .gt_stub_row_group { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; vertical-align: top; }
- #wonpvnyqto .gt_row_group_first td { border-top-width: 2px; }
- #wonpvnyqto .gt_row_group_first th { border-top-width: 2px; }
- #wonpvnyqto .gt_table_body { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
- #wonpvnyqto .gt_sourcenotes { color: #333333; background-color: #FFFFFF; border-bottom-style: none; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; }
- #wonpvnyqto .gt_sourcenote { font-size: 90%; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; text-align: left; }
- #wonpvnyqto .gt_left { text-align: left; }
- #wonpvnyqto .gt_center { text-align: center; }
- #wonpvnyqto .gt_right { text-align: right; font-variant-numeric: tabular-nums; }
- #wonpvnyqto .gt_font_normal { font-weight: normal; }
- #wonpvnyqto .gt_font_bold { font-weight: bold; }
- #wonpvnyqto .gt_font_italic { font-style: italic; }
- #wonpvnyqto .gt_super { font-size: 65%; }
- #wonpvnyqto .gt_footnote_marks { font-size: 75%; vertical-align: 0.4em; position: initial; }
- #wonpvnyqto .gt_asterisk { font-size: 100%; vertical-align: 0; }
+#fewybnmxqr p { margin: 0; padding: 0; }
+ #fewybnmxqr .gt_table { display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; }
+ #fewybnmxqr .gt_caption { padding-top: 4px; padding-bottom: 4px; }
+ #fewybnmxqr .gt_title { color: #333333; font-size: 125%; font-weight: initial; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; border-bottom-color: #FFFFFF; border-bottom-width: 0; }
+ #fewybnmxqr .gt_subtitle { color: #333333; font-size: 85%; font-weight: initial; padding-top: 3px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; border-top-color: #FFFFFF; border-top-width: 0; }
+ #fewybnmxqr .gt_heading { background-color: #FFFFFF; text-align: center; border-bottom-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
+ #fewybnmxqr .gt_bottom_border { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
+ #fewybnmxqr .gt_col_headings { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
+ #fewybnmxqr .gt_col_heading { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; }
+ #fewybnmxqr .gt_column_spanner_outer { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; padding-top: 0; padding-bottom: 0; padding-left: 4px; padding-right: 4px; }
+ #fewybnmxqr .gt_column_spanner_outer:first-child { padding-left: 0; }
+ #fewybnmxqr .gt_column_spanner_outer:last-child { padding-right: 0; }
+ #fewybnmxqr .gt_column_spanner { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; overflow-x: hidden; display: inline-block; width: 100%; }
+ #fewybnmxqr .gt_spanner_row { border-bottom-style: hidden; }
+ #fewybnmxqr .gt_group_heading { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; text-align: left; }
+ #fewybnmxqr .gt_empty_group_heading { padding: 0.5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: middle; }
+ #fewybnmxqr .gt_from_md> :first-child { margin-top: 0; }
+ #fewybnmxqr .gt_from_md> :last-child { margin-bottom: 0; }
+ #fewybnmxqr .gt_row { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; }
+ #fewybnmxqr .gt_stub { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; }
+ #fewybnmxqr .gt_stub_row_group { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; vertical-align: top; }
+ #fewybnmxqr .gt_row_group_first td { border-top-width: 2px; }
+ #fewybnmxqr .gt_row_group_first th { border-top-width: 2px; }
+ #fewybnmxqr .gt_table_body { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
+ #fewybnmxqr .gt_sourcenotes { color: #333333; background-color: #FFFFFF; border-bottom-style: none; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; }
+ #fewybnmxqr .gt_sourcenote { font-size: 90%; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; text-align: left; }
+ #fewybnmxqr .gt_left { text-align: left; }
+ #fewybnmxqr .gt_center { text-align: center; }
+ #fewybnmxqr .gt_right { text-align: right; font-variant-numeric: tabular-nums; }
+ #fewybnmxqr .gt_font_normal { font-weight: normal; }
+ #fewybnmxqr .gt_font_bold { font-weight: bold; }
+ #fewybnmxqr .gt_font_italic { font-style: italic; }
+ #fewybnmxqr .gt_super { font-size: 65%; }
+ #fewybnmxqr .gt_footnote_marks { font-size: 75%; vertical-align: 0.4em; position: initial; }
+ #fewybnmxqr .gt_asterisk { font-size: 100%; vertical-align: 0; }
  
 </style>
 <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
