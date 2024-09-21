@@ -22,3 +22,4 @@ great_tables
 python-dotenv
 moril
 seaborn
+graphviz

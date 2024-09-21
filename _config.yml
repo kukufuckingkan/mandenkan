@@ -8,9 +8,9 @@ logo: logo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
-execute:
-  execute_notebooks: force
-  kernel: "my_kernel"
+# execute:
+#   execute_notebooks: force
+#   kernel: "my_kernel"
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -52,7 +52,9 @@ parse:
 
 html:
     favicon : "favicon.ico"
-    
+# execute:
+#   hide_input: true 
+  
 # execute:
 #   execute_notebooks: true  # This ensures that the notebooks are executed during the build process
 #   kernel: "my_kernel"  # Use the default kernel across all notebooks
