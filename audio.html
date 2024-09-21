@@ -28,14 +28,14 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="_static/proof.css?v=b4b7a797" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -392,9 +392,10 @@ document.write(`
 <h1>audio visual<a class="headerlink" href="#audio-visual" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">kukukan</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-<span class="kn">from</span> <span class="nn">package</span> <span class="kn">import</span> <span class="n">audio</span>
+<span class="kn">from</span> <span class="nn">kukukan</span> <span class="kn">import</span> <span class="n">player</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
     <span class="s1">&#39;Vowel&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;ߊ&#39;</span><span class="p">,</span>
@@ -408,13 +409,13 @@ document.write(`
     
     <span class="s1">&#39;Sound&#39;</span><span class="p">:</span> 
     <span class="p">[</span>
-    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>
-    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>        
-    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>
-    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>
-    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>
-    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>
-    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>
+    <span class="n">player</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>
+    <span class="n">player</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>        
+    <span class="n">player</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>
+    <span class="n">player</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>
+    <span class="n">player</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>
+    <span class="n">player</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>
+    <span class="n">player</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>
     <span class="p">]</span>
 <span class="p">})</span>
 
@@ -462,6 +463,59 @@ document.write(`
     </tr>
   </tbody>
 </table></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+<span class="kn">from</span> <span class="nn">package</span> <span class="kn">import</span> <span class="n">audio</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;Vowel&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;ߊ&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;ߋ&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;ߌ&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;ߍ&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;ߎ&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;ߏ&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;ߐ&#39;</span><span class="p">,</span>
+             <span class="p">],</span>
+    
+    <span class="s1">&#39;Sound&#39;</span><span class="p">:</span> 
+    <span class="p">[</span>
+    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>
+    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>        
+    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>
+    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>
+    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>
+    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>
+    <span class="n">audio</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="s1">&#39;resource/asset/audio/1_kan.mp3&#39;</span><span class="p">,</span><span class="s1">&#39;DEV&#39;</span><span class="p">),</span>
+    <span class="p">]</span>
+<span class="p">})</span>
+
+
+<span class="n">HTML</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">escape</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">package</span> <span class="kn">import</span> <span class="n">audio</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span>     <span class="s1">&#39;Vowel&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;ߊ&#39;</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span>               <span class="s1">&#39;ߋ&#39;</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span>     <span class="p">]</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span> <span class="p">})</span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span> <span class="n">HTML</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">escape</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;package&#39;
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 
