@@ -5,15 +5,12 @@ pydata-sphinx-theme
 jupyter-book
 matplotlib
 numpy
-graphviz
 plotly
 networkx
 pygraphviz
 pydot
 matplotlib
-
 pandas
-skitlearn
 keras
 tensorflow
 sympy
@@ -23,4 +20,5 @@ prettytable
 plottable
 great_tables
 python-dotenv
-kukufuckingkan
+moril
+seaborn
