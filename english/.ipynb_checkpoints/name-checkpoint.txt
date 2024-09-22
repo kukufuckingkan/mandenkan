@@ -1,7 +1,5 @@
 # generate on gpt
-rat
-mouse
-elephant
+
 girrafe
 hippopotamus
 chicken
@@ -9,14 +7,19 @@ snake
 bee
 pigeon
 owl
+pelican
 lion
 panther
-tiger
 fish
 dolphin
 antilope
 whale
+butterfly
+Kangaroo
 parot
+pandas
+snail
+squirl
 sword fish
 crododile
 Snakehead
@@ -26,11 +29,15 @@ cow
 rattle snake
 albatros
 squid
+spider
 octopus
 panther
+monkey
+gorrila
 leopard
 lion
 camel
+dinosaur
 marabu
 bear
 buffalo
@@ -39,7 +46,9 @@ human
 python
 boa
 Squirl
+ant
 bug
+salamander
 snail
 rattle snake
 hawk
@@ -60,5 +69,6 @@ criket
 papillon
 goat
 fox
+alligator
 
 

@@ -98,8 +98,18 @@ parts:
     - file: english/18_war.ipynb
       title: War
       sections:
-      - file: english/18_war/1_party.ipynb
+      - file: english/18_war/1_tool.ipynb
+        title: Tool      
       - file: english/18_war/2_rank.ipynb
+        title: Rank      
+      - file: english/18_war/3_party.ipynb
+        title: Party
+      - file: english/18_war/6_situation.ipynb
+        title: Situation
+      - file: english/18_war/4_tatic.ipynb
+        title: Tatic
+      - file: english/18_war/5_uniform.ipynb
+        title: Uniform
 
     - file: english/25_body.ipynb
       title: Body    

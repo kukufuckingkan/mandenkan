@@ -22,7 +22,7 @@ jupyter-book create mynewbook/
 ------------------
 
 
-[0;36m  Cell [0;32mIn[1], line 1[0;36m[0m
+[0;36m  Cell [0;32mIn[2], line 1[0;36m[0m
 [0;31m    jupyter-book create mynewbook/[0m
 [0m                 ^[0m
 [0;31mSyntaxError[0m[0;31m:[0m invalid syntax

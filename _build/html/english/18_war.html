@@ -32,9 +32,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/proof.css?v=b4b7a797" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -53,7 +53,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -62,7 +62,7 @@
     <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Party" href="18_war/1_party.html" />
+    <link rel="next" title="tool" href="18_war/1_tool.html" />
     <link rel="prev" title="animal" href="12_animal.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -259,8 +259,12 @@
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="12_animal.html">Animal</a></li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">War</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="18_war/1_party.html">Party</a></li>
-<li class="toctree-l2"><a class="reference internal" href="18_war/2_rank.html">rank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_war/1_tool.html">Tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_war/2_rank.html">Rank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_war/3_party.html">Party</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_war/6_situation.html">Situation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_war/4_tatic.html">Tatic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_war/5_uniform.html">Uniform</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="25_body.html">Body</a></li>
@@ -434,84 +438,40 @@ document.write(`
 <h2>ߞߍߟߍ<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">13</span><span class="p">],</span> <span class="n">line</span> <span class="mi">7</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">kukukan</span> <span class="kn">import</span> <span class="n">player</span><span class="p">,</span> <span class="n">image</span>
-<span class="ne">----&gt; </span><span class="mi">7</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span>    <span class="s1">&#39;ߖߊ&#39;</span><span class="p">:</span> <span class="p">[</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span>             <span class="n">image</span><span class="o">.</span><span class="n">showHtml</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s2">&quot;ߞߍߟߍ&quot;</span><span class="p">),</span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span>             <span class="n">image</span><span class="o">.</span><span class="n">showHtml</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s2">&quot;ߡߏߙߌߝ&quot;</span><span class="p">),</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span>             <span class="n">image</span><span class="o">.</span><span class="n">showHtml</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s2">&quot;ߝߊߙߊ&quot;</span><span class="p">),</span>
-<span class="g g-Whitespace">     </span><span class="mi">12</span>        
-<span class="g g-Whitespace">     </span><span class="mi">13</span>              <span class="p">],</span>
-<span class="g g-Whitespace">     </span><span class="mi">14</span>     
-<span class="g g-Whitespace">     </span><span class="mi">15</span>     <span class="s1">&#39;ߕߐ߮&#39;</span><span class="p">:</span> <span class="p">[</span>
-<span class="g g-Whitespace">     </span><span class="mi">16</span>             <span class="s1">&#39;ߞߍߟߍ&#39;</span><span class="p">,</span>
-<span class="g g-Whitespace">     </span><span class="mi">17</span>             <span class="s1">&#39;ߡߏߙߌߝ&#39;</span><span class="p">,</span>
-<span class="g g-Whitespace">     </span><span class="mi">18</span>             <span class="s1">&#39;ߝߊߙߊ&#39;</span><span class="p">,</span>
-<span class="g g-Whitespace">     </span><span class="mi">19</span>              <span class="p">],</span>
-<span class="g g-Whitespace">     </span><span class="mi">20</span>     
-<span class="g g-Whitespace">     </span><span class="mi">21</span>     <span class="s1">&#39;ߞߊ߲&#39;</span><span class="p">:</span> 
-<span class="g g-Whitespace">     </span><span class="mi">22</span>     <span class="p">[</span>
-<span class="g g-Whitespace">     </span><span class="mi">23</span>     <span class="n">player</span><span class="o">.</span><span class="n">playFromGitt</span><span class="p">(</span><span class="s1">&#39;VOWEL&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span>       
-<span class="g g-Whitespace">     </span><span class="mi">24</span>     <span class="n">player</span><span class="o">.</span><span class="n">playFromGitt</span><span class="p">(</span><span class="s1">&#39;VOWEL&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span>
-<span class="g g-Whitespace">     </span><span class="mi">25</span>     <span class="n">player</span><span class="o">.</span><span class="n">playFromGitt</span><span class="p">(</span><span class="s1">&#39;VOWEL&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span>
-<span class="g g-Whitespace">     </span><span class="mi">26</span>     <span class="p">],</span>
-<span class="g g-Whitespace">     </span><span class="mi">27</span> 
-<span class="g g-Whitespace">     </span><span class="mi">28</span>         <span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="p">[</span>
-<span class="g g-Whitespace">     </span><span class="mi">29</span>             <span class="s1">&#39;War&#39;</span>
-<span class="g g-Whitespace">     </span><span class="mi">30</span>             <span class="s1">&#39;Gun&#39;</span><span class="p">,</span>
-<span class="g g-Whitespace">     </span><span class="mi">31</span>             <span class="s1">&#39;xxx&#39;</span><span class="p">,</span>
-<span class="g g-Whitespace">     </span><span class="mi">32</span>              <span class="p">],</span>
-<span class="g g-Whitespace">     </span><span class="mi">33</span>     
-<span class="g g-Whitespace">     </span><span class="mi">34</span>     <span class="s1">&#39;Pronounciation&#39;</span><span class="p">:</span> 
-<span class="g g-Whitespace">     </span><span class="mi">35</span>     <span class="p">[</span>
-<span class="g g-Whitespace">     </span><span class="mi">36</span>     <span class="n">player</span><span class="o">.</span><span class="n">playFromGitt</span><span class="p">(</span><span class="s1">&#39;VOWEL&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span>
-<span class="g g-Whitespace">     </span><span class="mi">37</span>     <span class="n">player</span><span class="o">.</span><span class="n">playFromGitt</span><span class="p">(</span><span class="s1">&#39;VOWEL&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span>
-<span class="g g-Whitespace">     </span><span class="mi">38</span>     <span class="n">player</span><span class="o">.</span><span class="n">playFromGitt</span><span class="p">(</span><span class="s1">&#39;VOWEL&#39;</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span>  
-<span class="g g-Whitespace">     </span><span class="mi">39</span>     <span class="p">]</span>
-<span class="g g-Whitespace">     </span><span class="mi">40</span> <span class="p">})</span>
-<span class="g g-Whitespace">     </span><span class="mi">43</span> <span class="n">HTML</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">escape</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
-
-<span class="nn">File /opt/anaconda3/lib/python3.11/site-packages/pandas/core/frame.py:778,</span> in <span class="ni">DataFrame.__init__</span><span class="nt">(self, data, index, columns, dtype, copy)</span>
-<span class="g g-Whitespace">    </span><span class="mi">772</span>     <span class="n">mgr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_init_mgr</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">773</span>         <span class="n">data</span><span class="p">,</span> <span class="n">axes</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;index&quot;</span><span class="p">:</span> <span class="n">index</span><span class="p">,</span> <span class="s2">&quot;columns&quot;</span><span class="p">:</span> <span class="n">columns</span><span class="p">},</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="n">copy</span>
-<span class="g g-Whitespace">    </span><span class="mi">774</span>     <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">776</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">777</span>     <span class="c1"># GH#38939 de facto copy defaults to False only in non-dict cases</span>
-<span class="ne">--&gt; </span><span class="mi">778</span>     <span class="n">mgr</span> <span class="o">=</span> <span class="n">dict_to_mgr</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">columns</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="n">copy</span><span class="p">,</span> <span class="n">typ</span><span class="o">=</span><span class="n">manager</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">779</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">ma</span><span class="o">.</span><span class="n">MaskedArray</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">780</span>     <span class="kn">from</span> <span class="nn">numpy.ma</span> <span class="kn">import</span> <span class="n">mrecords</span>
-
-<span class="nn">File /opt/anaconda3/lib/python3.11/site-packages/pandas/core/internals/construction.py:503,</span> in <span class="ni">dict_to_mgr</span><span class="nt">(data, index, columns, dtype, typ, copy)</span>
-<span class="g g-Whitespace">    </span><span class="mi">499</span>     <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">500</span>         <span class="c1"># dtype check to exclude e.g. range objects, scalars</span>
-<span class="g g-Whitespace">    </span><span class="mi">501</span>         <span class="n">arrays</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;dtype&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">arrays</span><span class="p">]</span>
-<span class="ne">--&gt; </span><span class="mi">503</span> <span class="k">return</span> <span class="n">arrays_to_mgr</span><span class="p">(</span><span class="n">arrays</span><span class="p">,</span> <span class="n">columns</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">typ</span><span class="o">=</span><span class="n">typ</span><span class="p">,</span> <span class="n">consolidate</span><span class="o">=</span><span class="n">copy</span><span class="p">)</span>
-
-<span class="nn">File /opt/anaconda3/lib/python3.11/site-packages/pandas/core/internals/construction.py:114,</span> in <span class="ni">arrays_to_mgr</span><span class="nt">(arrays, columns, index, dtype, verify_integrity, typ, consolidate)</span>
-<span class="g g-Whitespace">    </span><span class="mi">111</span> <span class="k">if</span> <span class="n">verify_integrity</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">112</span>     <span class="c1"># figure out the index, if necessary</span>
-<span class="g g-Whitespace">    </span><span class="mi">113</span>     <span class="k">if</span> <span class="n">index</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">114</span>         <span class="n">index</span> <span class="o">=</span> <span class="n">_extract_index</span><span class="p">(</span><span class="n">arrays</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">115</span>     <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">116</span>         <span class="n">index</span> <span class="o">=</span> <span class="n">ensure_index</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
-
-<span class="nn">File /opt/anaconda3/lib/python3.11/site-packages/pandas/core/internals/construction.py:677,</span> in <span class="ni">_extract_index</span><span class="nt">(data)</span>
-<span class="g g-Whitespace">    </span><span class="mi">675</span> <span class="n">lengths</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">raw_lengths</span><span class="p">))</span>
-<span class="g g-Whitespace">    </span><span class="mi">676</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lengths</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">677</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;All arrays must be of the same length&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">679</span> <span class="k">if</span> <span class="n">have_dicts</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">680</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">681</span>         <span class="s2">&quot;Mixing dicts with non-Series may lead to ambiguous ordering.&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">682</span>     <span class="p">)</span>
-
-<span class="ne">ValueError</span>: All arrays must be of the same length
-</pre></div>
-</div>
-</div>
+<div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>ߖߊ</th>
+      <th>ߕߐ߮</th>
+      <th>ߞߊ߲</th>
+      <th>Name</th>
+      <th>Pronounciation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/image/animal/1.jpg" alt="ߞߍߟߍ" width="150" height="150"></td>
+      <td>ߞߍߟߍ</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/1.mp3" type="audio/mpeg">\n                </audio></td>
+      <td>War</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/1.mp3" type="audio/mpeg">\n                </audio></td>
+    </tr>
+    <tr>
+      <td><img src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/image/animal/1.jpg" alt="ߡߏߙߌߝ" width="150" height="150"></td>
+      <td>ߡߏߙߌߝ</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/1.mp3" type="audio/mpeg">\n                </audio></td>
+      <td>Gun</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/1.mp3" type="audio/mpeg">\n                </audio></td>
+    </tr>
+    <tr>
+      <td><img src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/image/animal/1.jpg" alt="ߝߊߙߊ" width="150" height="150"></td>
+      <td>ߝߊߙߊ</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/1.mp3" type="audio/mpeg">\n                </audio></td>
+      <td>xxx</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/1.mp3" type="audio/mpeg">\n                </audio></td>
+    </tr>
+  </tbody>
+</table></div></div>
 </div>
 </section>
 <div class="toctree-wrapper compound">
@@ -558,11 +518,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="18_war/1_party.html"
+       href="18_war/1_tool.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Party</p>
+        <p class="prev-next-title">tool</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

@@ -15,7 +15,7 @@ logo: logo.png
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
-    targetname: ߡߊ߲ߘߋ߲ߞߊ߲.tex
+    targetname: book.tex
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
@@ -36,6 +36,8 @@ html:
 # sphinx config
     
 sphinx:
+  latex.pdf: true
+  timeout: 1200000
   extra_extensions:
     - sphinx_proof
   config:
@@ -44,6 +46,8 @@ sphinx:
     html_favicon: favicon.ico
     nb_remove_code_source: true
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    jupyter_sphinx_require_url: "https://unpkg.com/@jupyter-widgets/html-manager@0.18.0/dist/embed-amd.js"
+
     
 parse:
   myst_enable_extensions:
@@ -55,8 +59,11 @@ html:
     favicon : "favicon.ico"
 
 execute:
-  execute_notebooks: "off"
+  execute_notebooks: "auto"
   remove_input: true
+
+# extensions:
+#   - _extensions.pdf  
 
   
 # execute:
