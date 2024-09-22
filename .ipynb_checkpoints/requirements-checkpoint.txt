@@ -1,3 +1,4 @@
+moril=0.8
 sphinx
 sphinx-proof
 sphinx-inline-tabs
@@ -20,7 +21,9 @@ prettytable
 plottable
 great_tables
 python-dotenv
-moril
 seaborn
 graphviz
 nbclean
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
