@@ -1,0 +1,65 @@
+# generate on gpt
+rat
+mouse
+elephant
+girrafe
+hippopotamus
+chicken
+snake
+bee
+pigeon
+owl
+lion
+panther
+tiger
+fish
+dolphin
+antilope
+whale
+parot
+sword fish
+crododile
+Snakehead
+Cobra
+Mamba
+cow
+rattle snake
+albatros
+squid
+octopus
+panther
+leopard
+lion
+camel
+marabu
+bear
+buffalo
+pig
+human
+python
+boa
+Squirl
+bug
+snail
+rattle snake
+hawk
+Chrysopelea
+dog
+cat
+chameleon
+turtle
+viper
+frog
+warhog
+hyena
+lizard
+comodo dragon
+firefly
+fly
+criket
+papillon
+goat
+fox
+alligator
+
+

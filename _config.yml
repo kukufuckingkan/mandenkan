@@ -15,7 +15,7 @@ logo: logo.png
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
-    targetname: book.tex
+    targetname: ߡߊ߲ߘߋ߲ߞߊ߲.tex
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
