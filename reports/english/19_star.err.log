@@ -1,0 +1,144 @@
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/opt/anaconda3/lib/python3.11/site-packages/nbclient/client.py", line 1305, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/nbclient/client.py", line 705, in async_execute
+    await self.async_execute_cell(
+  File "/opt/anaconda3/lib/python3.11/site-packages/nbclient/client.py", line 1058, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/opt/anaconda3/lib/python3.11/site-packages/nbclient/client.py", line 914, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# HIDDEN
+import pandas as pd
+from IPython.display import HTML
+
+# Define headers and values (as lists)
+headers = ['Latin', 'English Name', 'pronounciation', 'nko pronouncition','image']
+values = [
+    ['Andromeda', 'Princess of Ethiopia', '','',''],
+    ['Antila', 'Air Pump', '','',''],
+    ['Apus', 'Bird Of Paradise', '','',''],
+    ['Aquarius', 'Water Bearer', '','',''],    
+    ['Ara', 'Altar', '','',''],
+    ['Aries', 'Ram', '','',''],
+    ['Auriga', 'Charioteer', '','',''],
+    ['Bootes', 'Herdsman', '','',''],
+    ['Caelum','Graving Tool','',''],
+    ['Camelopardalis', 'Giraffe', '','',''],
+    ['Cancer', 'Crab', '','',''],
+    ['Canes Venatici', 'Hunting dogs', '','',''],
+    ['Canis Major', 'Big dog', '','',''],
+    ['Capricornus', 'Sea goat', '','',''],
+    ['Carina', "Keel of Argonauts' ship", '','',''],
+    ['Cassiopeia', 'Queen of Ethiopia', '','',''],
+    ['Centaurus', 'Centaur', '','',''],
+    ['Cepheus', 'Sea of Monster (Whale)', '','',''],
+    ['Chamaeleon', 'Chameleon', '','',''],
+    ['Cassiopeia', 'Queen of Ethiopia', '','',''],
+    ['Circinus', 'Compasses', '','',''],
+    ['Columba', 'Dove', '','',''],
+    ['Coma Berenices', 'Berenice's hair', '','',''],
+    ['Corona Australis', 'Souther crown', '','',''],
+    ['Corona Borealis', 'Norther Crown', '','',''],
+    ['Corvus', 'Crow', '','',''],
+    ['Crater', 'Cup', '','',''],
+    ['Crux', 'Cross (southern', '','',''],  
+    ['Cygus', 'Swan', '','',''],
+    ['Delphinus', 'Porpoise', '','',''],  
+    ['Darado', 'Swordfish', '','',''], 
+    ['Draco', 'Dragon', '','',''], 
+    ['Equuleus', 'Little horse', '','',''], 
+    ['Eridanus', 'River', '','',''],
+    ['Fornax', 'River', '','',''], 
+    ['Eridanus', 'Furnace', '','',''], 
+    ['Gemini', 'Twins', '','',''], 
+    ['Hercules', 'Herculus, son of Zeus', '','',''], 
+    ['Herologium', 'Clock', '','',''], 
+    ['Hydra', 'Sea serpent', '','',''], 
+    ['Hydrus', 'Water snake', '','',''], 
+    ['Indus', 'Indian', '','',''], 
+    ['Lacera', 'Lizard', '','',''],
+    ['Leo', 'Lion', '','',''],
+    ['Leo Minor', 'Little Lion', '','',''],
+    ['Lepus', 'Hare', '','',''],
+    ['Lynx', 'Lynx', '','',''],
+    ['Lyra', 'Lyre of harp', '','',''],
+    ['Mensa', 'Table mountain', '','',''],
+    ['Microscopium', 'Indian', '','',''],  
+
+
+    ['Monoceros', 'Unicorn', '','',''],    
+    ['Musca', 'fly', '','',''],    
+    ['Norma', 'Carpenter's level', '','',''],    
+    ['Octans', 'Octant', '','',''],        
+    ['Ophiuchus', 'Holder of serpent', '','',''],    
+    ['Orion', 'Orion, the hunter', '','',''],    
+    ['Pavo', 'Peacock', '','',''],
+    ['Pegasus', 'Pegasus, the winged horse', '','',''],    
+    ['Perseus', 'Perseus,here who saved Andromeda', '','',''],    
+    ['Phoenix', 'Phoenix', '','',''],    
+    ['Pictor', 'Easel', '','',''],    
+    ['Pisces', 'Fishes', '','',''],    
+    ['Piscis Austrinus', 'Southern fish', '','',''],     
+    ['Puppis', 'Stern of the Argonauts'ship', '','',''],    
+    ['Pyxis', 'Compass of the argonauts' ship', '','',''],    
+    ['Recticulum', 'Net', '','',''],    
+    ['Sagitta', 'Arrow', '','',''],    
+    ['Sagittarius', 'Archer', '','',''],    
+    ['Scorplus', 'Scorpion', '','',''],    
+    ['Sculptor', 'Sculptor's tool', '','',''],    
+    ['Scutum', 'Shield', '','',''],        
+
+
+    ['Serpens', 'Serpent', '','',''], 
+    ['Sextant', 'Sextant', '','',''], 
+    ['Taurus', 'Bull', '','',''], 
+    ['Telescopium', 'Telescope', '','',''], 
+    ['Triangulum', 'Triangle', '','',''], 
+    ['Triangulum Australe', 'Southern triagle', '','',''], 
+    ['Tucana', 'Toucan', '','',''], 
+    ['Ursa Major', 'Big bear', '','',''], 
+    ['Vela', 'Sail of the Argonauts' ship', '','',''], 
+    ['Virgo', 'Virgin', '','',''], 
+    ['Volans', 'Flying firsh', '','',''], 
+    ['Vulpecula', 'Fox', '','',''],     
+    
+
+
+
+
+    
+
+
+    
+    
+
+
+
+        
+    
+]
+
+# Create the DataFrame with headers and rows of values
+df = pd.DataFrame(values, columns=headers)
+
+HTML(df.to_html(escape=False))
+------------------
+
+
+[0;36m  Cell [0;32mIn[11], line 30[0;36m[0m
+[0;31m    ['Coma Berenices', 'Berenice's hair', '','',''],[0m
+[0m                                                 ^[0m
+[0;31mSyntaxError[0m[0;31m:[0m unterminated string literal (detected at line 30)
+
+

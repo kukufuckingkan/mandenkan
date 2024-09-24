@@ -18,9 +18,11 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
+# HIDDEN
+import kukukan
 import pandas as pd
 from IPython.display import HTML
-from package import audio
+from kukukan import player
 
 df = pd.DataFrame({
     'Vowel': ['ߊ',
@@ -34,34 +36,39 @@ df = pd.DataFrame({
     
     'Sound': 
     [
-    audio.player('resource/asset/audio/1_kan.mp3',''),
-    audio.player('resource/asset/audio/1_kan.mp3',''),
-    audio.player('resource/asset/audio/1_kan.mp3',''),
-    audio.player('resource/asset/audio/1_kan.mp3',''),
-    audio.player('resource/asset/audio/1_kan.mp3',''),
-    audio.player('resource/asset/audio/1_kan.mp3',''),
-    audio.player('resource/asset/audio/1_kan.mp3',''),
+    player.playFromGitt('VOWEL',1),
+    player.playFromGitt('VOWEL',2),        
+    player.playFromGitt('VOWEL',3),
+    player.playFromGitt('VOWEL',4),
+    player.playFromGitt('VOWEL',5),
+    player.playFromGitt('VOWEL',6),
+    player.playFromGitt('VOWEL',7),
     ]
 })
 
+# df = df.style.set_table_styles(
+#     [{'selector': 'td', 'props': [('text-align', 'center')]}]
+# )
 
 HTML(df.to_html(escape=False,index=False))
 ------------------
 
 
 [0;31m---------------------------------------------------------------------------[0m
-[0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-Cell [0;32mIn[1], line 3[0m
-[1;32m      1[0m [38;5;28;01mimport[39;00m [38;5;21;01mpandas[39;00m [38;5;28;01mas[39;00m [38;5;21;01mpd[39;00m
-[1;32m      2[0m [38;5;28;01mfrom[39;00m [38;5;21;01mIPython[39;00m[38;5;21;01m.[39;00m[38;5;21;01mdisplay[39;00m [38;5;28;01mimport[39;00m HTML
-[0;32m----> 3[0m [38;5;28;01mfrom[39;00m [38;5;21;01mpackage[39;00m [38;5;28;01mimport[39;00m audio
-[1;32m      5[0m df [38;5;241m=[39m pd[38;5;241m.[39mDataFrame({
-[1;32m      6[0m     [38;5;124m'[39m[38;5;124mVowel[39m[38;5;124m'[39m: [[38;5;124m'[39m[38;5;124mߊ[39m[38;5;124m'[39m,
-[1;32m      7[0m               [38;5;124m'[39m[38;5;124mߋ[39m[38;5;124m'[39m,
+[0;31mImportError[0m                               Traceback (most recent call last)
+Cell [0;32mIn[1], line 5[0m
+[1;32m      3[0m [38;5;28;01mimport[39;00m [38;5;21;01mpandas[39;00m [38;5;28;01mas[39;00m [38;5;21;01mpd[39;00m
+[1;32m      4[0m [38;5;28;01mfrom[39;00m [38;5;21;01mIPython[39;00m[38;5;21;01m.[39;00m[38;5;21;01mdisplay[39;00m [38;5;28;01mimport[39;00m HTML
+[0;32m----> 5[0m [38;5;28;01mfrom[39;00m [38;5;21;01mkukukan[39;00m [38;5;28;01mimport[39;00m player
+[1;32m      7[0m df [38;5;241m=[39m pd[38;5;241m.[39mDataFrame({
+[1;32m      8[0m     [38;5;124m'[39m[38;5;124mVowel[39m[38;5;124m'[39m: [[38;5;124m'[39m[38;5;124mߊ[39m[38;5;124m'[39m,
+[1;32m      9[0m               [38;5;124m'[39m[38;5;124mߋ[39m[38;5;124m'[39m,
 [0;32m   (...)[0m
-[1;32m     24[0m     ]
-[1;32m     25[0m })
-[1;32m     28[0m HTML(df[38;5;241m.[39mto_html(escape[38;5;241m=[39m[38;5;28;01mFalse[39;00m,index[38;5;241m=[39m[38;5;28;01mFalse[39;00m))
+[1;32m     26[0m     ]
+[1;32m     27[0m })
+[1;32m     29[0m [38;5;66;03m# df = df.style.set_table_styles([39;00m
+[1;32m     30[0m [38;5;66;03m#     [{'selector': 'td', 'props': [('text-align', 'center')]}][39;00m
+[1;32m     31[0m [38;5;66;03m# )[39;00m
 
-[0;31mModuleNotFoundError[0m: No module named 'package'
+[0;31mImportError[0m: cannot import name 'player' from 'kukukan' (/opt/anaconda3/lib/python3.11/site-packages/kukukan/__init__.py)
 
