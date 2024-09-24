@@ -1,4 +1,4 @@
-moril==1.0.5
+moril==1.0.6
 sphinx
 sphinx-proof
 sphinx-inline-tabs
