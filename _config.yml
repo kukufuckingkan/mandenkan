@@ -32,6 +32,15 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+  extra_css:
+    - _static/custom.css
+  theme:
+    name: "sphinx_book_theme"  # Specify a theme that supports customization
+    options:
+      use_issues: true          # Enable issues on GitHub
+      use_readthedocs: true     # Use ReadTheDocs style
+  
+  
 
 # sphinx config
     

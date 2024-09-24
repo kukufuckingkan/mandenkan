@@ -1,0 +1,96 @@
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/opt/anaconda3/lib/python3.11/site-packages/nbclient/client.py", line 1305, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/nbclient/client.py", line 705, in async_execute
+    await self.async_execute_cell(
+  File "/opt/anaconda3/lib/python3.11/site-packages/nbclient/client.py", line 1058, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/opt/anaconda3/lib/python3.11/site-packages/nbclient/client.py", line 914, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# HIDDEN
+import pandas as pd
+from IPython.display import HTML
+
+# Define headers and values (as lists)
+headers = ['Color', 'nko', 'pronounciation', 'nko pronouncition','image']
+values = [
+    ['Red', '', '','',''],
+    ['Orange', '', '','',''],
+    ['Yellow', '', '','',''],
+    ['Green', '', '','',''],
+    ['Blue', '', '','',''],
+    ['Indigo', '', '','',''],
+    ['Black', '', '','',''],
+    ['White', '', '','',''],
+]
+
+# Create the DataFrame with headers and rows of values
+df = pd.DataFrame(values, columns=headers)
+
+HTML(df.to_html(escape=False))
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mKeyboardInterrupt[0m                         Traceback (most recent call last)
+Cell [0;32mIn[2], line 2[0m
+[1;32m      1[0m [38;5;66;03m# HIDDEN[39;00m
+[0;32m----> 2[0m [38;5;28;01mimport[39;00m [38;5;21;01mpandas[39;00m [38;5;28;01mas[39;00m [38;5;21;01mpd[39;00m
+[1;32m      3[0m [38;5;28;01mfrom[39;00m [38;5;21;01mIPython[39;00m[38;5;21;01m.[39;00m[38;5;21;01mdisplay[39;00m [38;5;28;01mimport[39;00m HTML
+[1;32m      5[0m [38;5;66;03m# Define headers and values (as lists)[39;00m
+
+File [0;32m/opt/anaconda3/lib/python3.11/site-packages/pandas/__init__.py:14[0m
+[1;32m     12[0m [38;5;28;01mfor[39;00m _dependency [38;5;129;01min[39;00m _hard_dependencies:
+[1;32m     13[0m     [38;5;28;01mtry[39;00m:
+[0;32m---> 14[0m         [38;5;28m__import__[39m(_dependency)
+[1;32m     15[0m     [38;5;28;01mexcept[39;00m [38;5;167;01mImportError[39;00m [38;5;28;01mas[39;00m _e:  [38;5;66;03m# pragma: no cover[39;00m
+[1;32m     16[0m         _missing_dependencies[38;5;241m.[39mappend([38;5;124mf[39m[38;5;124m"[39m[38;5;132;01m{[39;00m_dependency[38;5;132;01m}[39;00m[38;5;124m: [39m[38;5;132;01m{[39;00m_e[38;5;132;01m}[39;00m[38;5;124m"[39m)
+
+File [0;32m/opt/anaconda3/lib/python3.11/site-packages/numpy/__init__.py:149[0m
+[1;32m    147[0m [38;5;28;01mfrom[39;00m [38;5;21;01m.[39;00m [38;5;28;01mimport[39;00m exceptions
+[1;32m    148[0m [38;5;28;01mfrom[39;00m [38;5;21;01m.[39;00m [38;5;28;01mimport[39;00m dtypes
+[0;32m--> 149[0m [38;5;28;01mfrom[39;00m [38;5;21;01m.[39;00m [38;5;28;01mimport[39;00m lib
+[1;32m    150[0m [38;5;66;03m# NOTE: to be revisited following future namespace cleanup.[39;00m
+[1;32m    151[0m [38;5;66;03m# See gh-14454 and gh-15672 for discussion.[39;00m
+[1;32m    152[0m [38;5;28;01mfrom[39;00m [38;5;21;01m.[39;00m[38;5;21;01mlib[39;00m [38;5;28;01mimport[39;00m [38;5;241m*[39m
+
+File [0;32m/opt/anaconda3/lib/python3.11/site-packages/numpy/lib/__init__.py:23[0m
+[1;32m     20[0m [38;5;66;03m# Private submodules[39;00m
+[1;32m     21[0m [38;5;66;03m# load module names. See https://github.com/networkx/networkx/issues/5838[39;00m
+[1;32m     22[0m [38;5;28;01mfrom[39;00m [38;5;21;01m.[39;00m [38;5;28;01mimport[39;00m type_check
+[0;32m---> 23[0m [38;5;28;01mfrom[39;00m [38;5;21;01m.[39;00m [38;5;28;01mimport[39;00m index_tricks
+[1;32m     24[0m [38;5;28;01mfrom[39;00m [38;5;21;01m.[39;00m [38;5;28;01mimport[39;00m function_base
+[1;32m     25[0m [38;5;28;01mfrom[39;00m [38;5;21;01m.[39;00m [38;5;28;01mimport[39;00m nanfunctions
+
+File [0;32m/opt/anaconda3/lib/python3.11/site-packages/numpy/lib/index_tricks.py:13[0m
+[1;32m     10[0m [38;5;28;01mfrom[39;00m [38;5;21;01mnumpy[39;00m[38;5;21;01m.[39;00m[38;5;21;01mcore[39;00m[38;5;21;01m.[39;00m[38;5;21;01mnumerictypes[39;00m [38;5;28;01mimport[39;00m issubdtype
+[1;32m     12[0m [38;5;28;01mimport[39;00m [38;5;21;01mnumpy[39;00m[38;5;21;01m.[39;00m[38;5;21;01mmatrixlib[39;00m [38;5;28;01mas[39;00m [38;5;21;01mmatrixlib[39;00m
+[0;32m---> 13[0m [38;5;28;01mfrom[39;00m [38;5;21;01m.[39;00m[38;5;21;01mfunction_base[39;00m [38;5;28;01mimport[39;00m diff
+[1;32m     14[0m [38;5;28;01mfrom[39;00m [38;5;21;01mnumpy[39;00m[38;5;21;01m.[39;00m[38;5;21;01mcore[39;00m[38;5;21;01m.[39;00m[38;5;21;01mmultiarray[39;00m [38;5;28;01mimport[39;00m ravel_multi_index, unravel_index
+[1;32m     15[0m [38;5;28;01mfrom[39;00m [38;5;21;01mnumpy[39;00m[38;5;21;01m.[39;00m[38;5;21;01mcore[39;00m [38;5;28;01mimport[39;00m overrides, linspace
+
+File [0;32m<frozen importlib._bootstrap>:1176[0m, in [0;36m_find_and_load[0;34m(name, import_)[0m
+
+File [0;32m<frozen importlib._bootstrap>:1147[0m, in [0;36m_find_and_load_unlocked[0;34m(name, import_)[0m
+
+File [0;32m<frozen importlib._bootstrap>:690[0m, in [0;36m_load_unlocked[0;34m(spec)[0m
+
+File [0;32m<frozen importlib._bootstrap_external>:936[0m, in [0;36mexec_module[0;34m(self, module)[0m
+
+File [0;32m<frozen importlib._bootstrap_external>:1069[0m, in [0;36mget_code[0;34m(self, fullname)[0m
+
+File [0;32m<frozen importlib._bootstrap_external>:729[0m, in [0;36m_compile_bytecode[0;34m(data, name, bytecode_path, source_path)[0m
+
+[0;31mKeyboardInterrupt[0m: 
+

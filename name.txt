@@ -10,9 +10,6 @@ pelican
 lion
 panther
 fish
-praying mantis
-dolphin
-whale
 Kangaroo
 parot
 pandas
@@ -28,6 +25,7 @@ gerenuk
 eland/orynx
 suni 
 impala
+otter
 squirl
 earwig
 ladybug
@@ -48,7 +46,6 @@ rattle snake
 albatros
 spider
 panther
-monkey
 gorrila
 goat
 leopard
@@ -56,10 +53,8 @@ lion
 dinosaur
 marabu
 bear
-buffalo
 manatee
 pig
-sloth
 porcupine
 hedgehog
 echidas,

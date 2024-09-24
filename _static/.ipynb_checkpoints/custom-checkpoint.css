@@ -1,0 +1,15 @@
+/* Example CSS for ToC */
+#toc {
+    font-size: 16px;
+    background-color: #ff0000;  /* Red background */
+    padding: 10px;
+}
+
+#toc a {
+    color: #ffffff;  /* White text for contrast */
+    text-decoration: none;  /* No underline */
+}
+
+#toc a:hover {
+    text-decoration: none;  /* No underline on hover */
+}

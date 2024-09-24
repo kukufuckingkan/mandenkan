@@ -1,3 +1,5 @@
+r-irkernel
+rpy2
 moril==1.0.6
 sphinx
 sphinx-proof
@@ -28,3 +30,5 @@ google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
 ipywidgets
+pyspark
+jupyter_contrib_nbextensions

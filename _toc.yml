@@ -20,7 +20,7 @@ parts:
     - file: english/3_alphabet/1_index.md
       title: Alphabet
       sections:
-      - file: english/3_alphabet/2_tone.md
+      - file: english/3_alphabet/2_tone.ipynb
         title: Tone
         sections:
         - file: english/3_alphabet/2_tone/1_formula.md
@@ -103,6 +103,17 @@ parts:
         title: Time stuff
       - file: english/5_1_time/2_month.ipynb
         title: month
+
+    - file: english/8_household.ipynb
+      title: Household
+    - file: english/21_river.ipynb
+      title: Water
+    - file: english/22_continent.ipynb
+      title: Land  
+    - file: english/28_air.ipynb
+      title: Air  
+    - file: english/23_country.ipynb
+      title: Country         
         
     - file: english/12_animal.ipynb
       title: Animal 
@@ -126,7 +137,9 @@ parts:
     - file: english/25_body.ipynb
       title: Body   
     - file: english/19_star.ipynb
-      title: Star          
+      title: Star 
+    - file: english/29_language.ipynb
+      title: Language         
       
   - caption: Francais
     chapters:
