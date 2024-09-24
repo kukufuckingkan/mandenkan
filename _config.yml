@@ -37,7 +37,7 @@ html:
     
 sphinx:
   latex.pdf: true
-  timeout: 1200000
+  timeout: 12000000
   extra_extensions:
     - sphinx_proof
   config:

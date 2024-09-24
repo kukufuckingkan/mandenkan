@@ -1,0 +1,93 @@
+# generate on gpt
+
+girrafe
+chicken
+snake
+bee
+pigeon
+owl
+pelican
+lion
+panther
+fish
+praying mantis
+dolphin
+whale
+Kangaroo
+parot
+pandas
+blue jay
+zebra
+snail
+coy fish
+gazelle
+blackbuck
+gerenuk
+eland/orynx
+suni 
+impala
+squirl
+earwig
+ladybug
+beetle
+fly
+flee
+silverfish
+macaque
+blattodea
+sword fish
+Snakehead
+Brown marmorated stink bug
+Cobra
+Mamba
+cow
+bisson
+rattle snake
+albatros
+spider
+panther
+monkey
+gorrila
+goat
+leopard
+lion
+dinosaur
+marabu
+bear
+buffalo
+manatee
+pig
+sloth
+porcupine
+hedgehog
+echidas,
+spiny rat
+mice
+human
+python
+boa
+Squirl
+ant
+salamander
+snail
+rattle snake
+hawk
+Chrysopelea
+dog
+cat
+chameleon
+turtle
+viper
+frog
+warhog
+hyena
+lizard
+comodo dragon
+firefly
+fly
+criket
+papillon
+goat
+alligator
+
+

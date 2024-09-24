@@ -32,9 +32,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css?v=b4b7a797" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -223,7 +223,11 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../4_grammar/1_index.html">Grammar</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../4_grammar/2_noun.html">Noun</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../4_grammar/2_noun.html">Name</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../4_grammar/2_1_noun/1_proper_noun.html">Proper noun</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../4_grammar/2_1_noun/2_common_noun.html">Common noun</a></li>
+</ul>
+</details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../4_grammar/3_pronoun.html">Pronoun</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../4_grammar/3_1_pronoun/1_personal_pronoun.html">Personal</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../4_grammar/3_1_pronoun/2_possessive.html">Possessive</a></li>
@@ -248,8 +252,14 @@
 <li class="toctree-l3"><a class="reference internal" href="../4_grammar/7_1_particle/4_summary.html">Summary</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2"><a class="reference internal" href="../4_grammar/8_interrogation.html">interrogation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../4_grammar/8_interrogation.html">Interrogation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../4_grammar/9_adverb.html">adverb &amp; Prepositions</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../4_grammar/11_affix.html">Affix</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../4_grammar/11_affix/1_prefix.html">Prefix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../4_grammar/11_affix/2_suffix.html">Suffix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../4_grammar/11_affix/3_interfix.html">Interfix</a></li>
+</ul>
+</details></li>
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../5_time.html">Time</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -426,24 +436,90 @@ document.write(`
 <h1>month<a class="headerlink" href="#month" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">5</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-<span class="ne">----&gt; </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">kukukan</span> <span class="kn">import</span> <span class="n">player</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span>       <span class="s1">&#39;karo to&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;ߓߌߠߊߥߎߟ߲ߋ&#39;</span><span class="p">,</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span>               <span class="s1">&#39;ߤ߲ߏߤߏߜߍ&#39;</span><span class="p">,</span>
-   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">65</span>     <span class="p">]</span>
-<span class="g g-Whitespace">     </span><span class="mi">66</span> <span class="p">})</span>
-<span class="g g-Whitespace">     </span><span class="mi">69</span> <span class="n">HTML</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">escape</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
-
-<span class="ne">ImportError</span>: cannot import name &#39;player&#39; from &#39;kukukan&#39; (/opt/anaconda3/lib/python3.11/site-packages/kukukan/__init__.py)
-</pre></div>
-</div>
-</div>
+<div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>karo to</th>
+      <th>nko sound</th>
+      <th>month name</th>
+      <th>month Sound</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ߓߌߠߊߥߎߟ߲ߋ</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/1.mp3" type="audio/mpeg">\n                </audio></td>
+      <td>January</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/1.mp3" type="audio/mpeg">\n                </audio></td>
+    </tr>
+    <tr>
+      <td>ߤ߲ߏߤߏߜߍ</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/2.mp3" type="audio/mpeg">\n                </audio></td>
+      <td>February</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/2.mp3" type="audio/mpeg">\n                </audio></td>
+    </tr>
+    <tr>
+      <td>ߕߊߙߊߓߊ</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/3.mp3" type="audio/mpeg">\n                </audio></td>
+      <td>March</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/3.mp3" type="audio/mpeg">\n                </audio></td>
+    </tr>
+    <tr>
+      <td>ߤ߲ߏߤߏߘߌߓߌ</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/4.mp3" type="audio/mpeg">\n                </audio></td>
+      <td>April</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/4.mp3" type="audio/mpeg">\n                </audio></td>
+    </tr>
+    <tr>
+      <td>ߘߊߓߊߕߊ</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/5.mp3" type="audio/mpeg">\n                </audio></td>
+      <td>May</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/5.mp3" type="audio/mpeg">\n                </audio></td>
+    </tr>
+    <tr>
+      <td>ߥ߬ߊߛߌߥ߬ߊߙߊ</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/6.mp3" type="audio/mpeg">\n                </audio></td>
+      <td>June</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/6.mp3" type="audio/mpeg">\n                </audio></td>
+    </tr>
+    <tr>
+      <td>ߤ߬ߊߙ߬ߌߝߐ</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/7.mp3" type="audio/mpeg">\n                </audio></td>
+      <td>July</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/7.mp3" type="audio/mpeg">\n                </audio></td>
+    </tr>
+    <tr>
+      <td>ߘߊߓ߬ߊߓߌߟߊ</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/8.mp3" type="audio/mpeg">\n                </audio></td>
+      <td>August</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/8.mp3" type="audio/mpeg">\n                </audio></td>
+    </tr>
+    <tr>
+      <td>ߕߎߟߊߝ߲ߌ</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/9.mp3" type="audio/mpeg">\n                </audio></td>
+      <td>September</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/9.mp3" type="audio/mpeg">\n                </audio></td>
+    </tr>
+    <tr>
+      <td>ߤ߲ߏߓߌߕ߮ߌ</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/10.mp3" type="audio/mpeg">\n                </audio></td>
+      <td>October</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/10.mp3" type="audio/mpeg">\n                </audio></td>
+    </tr>
+    <tr>
+      <td>ߣߍߣߍߓߊ</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/11.mp3" type="audio/mpeg">\n                </audio></td>
+      <td>November</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/11.mp3" type="audio/mpeg">\n                </audio></td>
+    </tr>
+    <tr>
+      <td>ߤߏߟ߲ߌߤߏߟ߲ߌ</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/12.mp3" type="audio/mpeg">\n                </audio></td>
+      <td>December</td>
+      <td><audio controls style="width:150px">\n                    <source src="https://github.com/kukufuckingkan/mandenkan_media/raw/refs/heads/main/sound/vowel/12.mp3" type="audio/mpeg">\n                </audio></td>
+    </tr>
+  </tbody>
+</table></div></div>
 </div>
 </section>
 
