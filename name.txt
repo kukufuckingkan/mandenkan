@@ -19,6 +19,8 @@ pandas
 blue jay
 zebra
 snail
+Capricorn
+Taurus
 coy fish
 gazelle
 blackbuck

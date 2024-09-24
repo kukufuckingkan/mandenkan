@@ -124,7 +124,9 @@ parts:
         title: Uniform
 
     - file: english/25_body.ipynb
-      title: Body    
+      title: Body   
+    - file: english/19_star.ipynb
+      title: Star          
       
   - caption: Francais
     chapters:
