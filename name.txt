@@ -13,6 +13,7 @@ fish
 Kangaroo
 parot
 pandas
+urunga
 blue jay
 zebra
 snail
@@ -20,6 +21,7 @@ Capricorn
 Taurus
 coy fish
 gazelle
+bison
 blackbuck
 gerenuk
 eland/orynx
@@ -45,13 +47,93 @@ bisson
 rattle snake
 albatros
 spider
+Coastal Taipan
+Common Death Adder 
+African Black Mamba – Dendroaspis polylepis
+Coastal Taipan – Oxyuranus scutellatus scutellatus
+Common Death Adder – Acanthophis antarcticus
+Indian cobra – Naja naja
+Inland Taipan – Oxyuranus microlepidotus
+Common Krait – Bungarus caeruleus
+Russell’s Viper – Daboia russelii
+Saw-scaled Viper – Echis carinatus
+King Cobra – Ophiophagus hannah
+Common watersnake – Nerodia sipedon
+Indian python / Rock Python – Python molurus
+Burmese python – Python bivittatus
+Common Wolf Snake – Lycodon capucinus
+Red Sand Boa / John’s Sand Boa – Eryx johnii
+Eastern ratsnake – Pantherophis alleghaniensis,
+Common Krait
 panther
 gorrila
 goat
+Topi
+Dik Dik
+Gerenuk
+Eland (Common and Giant)
+Sable Antelope
+pigeon
+Roan Antelope
+Kudu
+Impala
+Nyala
+Oryx (Gemsbok)
+Waterbuck
+Bongo
+dove
+Antelopes
+finches
+Gazelles
+toucans
+Hummingbird
+parrot
+Deer
+crow
+crane
+emu
+swifts
+golden early
+andean condor
+european goldfinch
+osprey
+mapie
+warbler
+tit
+swift
+barn swallow
+house sparrow
+hornbill
+loons
+albatross
+robin
+eurasian
+loos
+pelican
+cuckoos
+kingfisher
+bookies
+swan
+falcon
+bird of paradise
+bluebird
+ostrish
+swallow
+woodpeckers
+blackbird
+heron
+long tailed tit
+passerine
+bugerigar
+columbidae
+sparrow
+cassowarie
 leopard
 lion
 dinosaur
+Coastal Taipan
 marabu
+Death Adder
 bear
 manatee
 pig
